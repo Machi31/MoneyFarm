@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 6094a12c20e3e4340840b6e8981329f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BushMoney-fade-out_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9a69a1d685df440800000000000000
+      internalID: 4971226789307656650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33ea19dbcebf87060800000000000000
+      internalID: 6951583019057655347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d151706ef3884b0800000000000000
+      internalID: -5438026292856021634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e454c7f3590054a30800000000000000
+      internalID: 4198762868608091470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2165c69902510aec0800000000000000
+      internalID: -3557820475865541102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1b1e28311eab720800000000000000
+      internalID: 2862847987063828919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869455e75faecfa20800000000000000
+      internalID: 3097608983831464296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed8810dad7571c420800000000000000
+      internalID: 2648527238504483038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68eda6b80b63d0e0800000000000000
+      internalID: -2246334103958984593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 598889fa57a49b160800000000000000
+      internalID: 7041741361688119445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc641d8a46293b8d0800000000000000
+      internalID: -2831758779659237684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e374c57d3d2426280800000000000000
+      internalID: -9051598823442593986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac25ab096a2f43220800000000000000
+      internalID: 2464861693285126858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beae10b24eb13e250800000000000000
+      internalID: 5972648197611449067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32697bcc9309e1650800000000000000
+      internalID: 6205555914485241379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ac9d279c1845fa0800000000000000
+      internalID: -5812878516813182312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e208f930b42cc2c30800000000000000
+      internalID: 4336054168690065454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5706060c8efae540800000000000000
+      internalID: 5038119010517256029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d09aabcb05811cd0800000000000000
+      internalID: -2589142025053237038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c932f6096ad82a3d0800000000000000
+      internalID: -3196837038952340580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 095ea665a50bc0380800000000000000
+      internalID: -9003627652977072752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfff7d9dfbe37c2f0800000000000000
+      internalID: -952723802451083267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 292d20929300ae680800000000000000
+      internalID: -8725161082575727982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afb54fb6a5866c940800000000000000
+      internalID: 5316051147724971002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877e3d25b8ffe4cb0800000000000000
+      internalID: -4877680372540512392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b31bc67369b8fa9d0800000000000000
+      internalID: -2760834569263599301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfabdf35c57ae910800000000000000
+      internalID: 1867434485538861010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e0525ee844b27860800000000000000
+      internalID: 7526276152618537188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407900f9e58e1e530800000000000000
+      internalID: 3882639846862264068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c64ddd9e63cd7e520800000000000000
+      internalID: 2731393827433469036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19eb7a3e84efb2920800000000000000
+      internalID: 2966744368564125329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f126c2f3125f3b0800000000000000
+      internalID: -5479436816415056061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1af08a349bd9bf40800000000000000
+      internalID: 5744864229370952218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68face168c58f8250800000000000000
+      internalID: 5949120728462569350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7961a391279291e20800000000000000
+      internalID: 3321731770188699287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be67ef9c9b4b5e80800000000000000
+      internalID: -8188868361373389131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae377cdf21c9f760800000000000000
+      internalID: 7492231866413956776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791227b832e9e4320800000000000000
+      internalID: 2544144715011465623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a254028b74d37ee00800000000000000
+      internalID: 1073894414392247594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e746bcf1765749f0800000000000000
+      internalID: -484323387347941400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1dc1c0a8260b460800000000000000
+      internalID: 7255407344742093259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6951f8bbda06f80800000000000000
+      internalID: -8115295507450587404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94aa9fdc7cdf0ace0800000000000000
+      internalID: -1395836849888843191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7203f3dfe1babb960800000000000000
+      internalID: 7618871344213471271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04be433a1b5effff0800000000000000
+      internalID: -28923866584256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa2fd0d6288f3e280800000000000000
+      internalID: -9015088790006533457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 650be74262db894f0800000000000000
+      internalID: -821698960476426154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3697f0cf642796200800000000000000
+      internalID: 173795709832624483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d4d9321b6ed5740800000000000000
+      internalID: 5142519998008085812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34806f49d9220e040800000000000000
+      internalID: 4674774473414936643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe0aa04541f78380800000000000000
+      internalID: -8968934853145129282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c750ad50b484bab40800000000000000
+      internalID: 5452531260920038780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f437a0c4f60bf8b50800000000000000
+      internalID: 6597685971184677711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3be1df9ff4a78b660800000000000000
+      internalID: 7401800471498530483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fc21bae272de5460800000000000000
+      internalID: 7232449442609179897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ce01e7b41732bcf0800000000000000
+      internalID: -238067268173361470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2633d5a68a0336050800000000000000
+      internalID: 5792527045625721698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c32a92464db1f0d0800000000000000
+      internalID: -3390720934970514488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f17c9723b0894c960800000000000000
+      internalID: 7621383643276625695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-fade-out_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbe9676b4da867350800000000000000
+      internalID: 6014146998598803131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BushMoney-fade-out_0: 4971226789307656650
+      BushMoney-fade-out_1: 6951583019057655347
+      BushMoney-fade-out_10: -2831758779659237684
+      BushMoney-fade-out_11: -9051598823442593986
+      BushMoney-fade-out_12: 2464861693285126858
+      BushMoney-fade-out_13: 5972648197611449067
+      BushMoney-fade-out_14: 6205555914485241379
+      BushMoney-fade-out_15: -5812878516813182312
+      BushMoney-fade-out_16: 4336054168690065454
+      BushMoney-fade-out_17: 5038119010517256029
+      BushMoney-fade-out_18: -2589142025053237038
+      BushMoney-fade-out_19: -3196837038952340580
+      BushMoney-fade-out_2: -5438026292856021634
+      BushMoney-fade-out_20: -9003627652977072752
+      BushMoney-fade-out_21: -952723802451083267
+      BushMoney-fade-out_22: -8725161082575727982
+      BushMoney-fade-out_23: 5316051147724971002
+      BushMoney-fade-out_24: -4877680372540512392
+      BushMoney-fade-out_25: -2760834569263599301
+      BushMoney-fade-out_26: 1867434485538861010
+      BushMoney-fade-out_27: 7526276152618537188
+      BushMoney-fade-out_28: 3882639846862264068
+      BushMoney-fade-out_29: 2731393827433469036
+      BushMoney-fade-out_3: 4198762868608091470
+      BushMoney-fade-out_30: 2966744368564125329
+      BushMoney-fade-out_31: -5479436816415056061
+      BushMoney-fade-out_32: 5744864229370952218
+      BushMoney-fade-out_33: 5949120728462569350
+      BushMoney-fade-out_34: 3321731770188699287
+      BushMoney-fade-out_35: -8188868361373389131
+      BushMoney-fade-out_36: 7492231866413956776
+      BushMoney-fade-out_37: 2544144715011465623
+      BushMoney-fade-out_38: 1073894414392247594
+      BushMoney-fade-out_39: -484323387347941400
+      BushMoney-fade-out_4: -3557820475865541102
+      BushMoney-fade-out_40: 7255407344742093259
+      BushMoney-fade-out_41: -8115295507450587404
+      BushMoney-fade-out_42: -1395836849888843191
+      BushMoney-fade-out_43: 7618871344213471271
+      BushMoney-fade-out_44: -28923866584256
+      BushMoney-fade-out_45: -9015088790006533457
+      BushMoney-fade-out_46: -821698960476426154
+      BushMoney-fade-out_47: 173795709832624483
+      BushMoney-fade-out_48: 5142519998008085812
+      BushMoney-fade-out_49: 4674774473414936643
+      BushMoney-fade-out_5: 2862847987063828919
+      BushMoney-fade-out_50: -8968934853145129282
+      BushMoney-fade-out_51: 5452531260920038780
+      BushMoney-fade-out_52: 6597685971184677711
+      BushMoney-fade-out_53: 7401800471498530483
+      BushMoney-fade-out_54: 7232449442609179897
+      BushMoney-fade-out_55: -238067268173361470
+      BushMoney-fade-out_56: 5792527045625721698
+      BushMoney-fade-out_57: -3390720934970514488
+      BushMoney-fade-out_58: 7621383643276625695
+      BushMoney-fade-out_59: 6014146998598803131
+      BushMoney-fade-out_6: 3097608983831464296
+      BushMoney-fade-out_7: 2648527238504483038
+      BushMoney-fade-out_8: -2246334103958984593
+      BushMoney-fade-out_9: 7041741361688119445
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

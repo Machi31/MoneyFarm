@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 2987d4123552efb4bb47fb3ba8b636c0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orange-Idle_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c52643480fe3b3290800000000000000
+      internalID: -7909659117815045540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e62436689733146d0800000000000000
+      internalID: -3008066479068069266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da8e79f9cde03d2d0800000000000000
+      internalID: -3255241764925609811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0ee9319e2dd6d70800000000000000
+      internalID: 9038111925700845783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d11df5911cca0400800000000000000
+      internalID: 291269501821718994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16c80f341da34a950800000000000000
+      internalID: 6459352436018547809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80d3f4ca6ba77e970800000000000000
+      internalID: 8784124523202952456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06002eeb6de47f90800000000000000
+      internalID: -6956674476568214001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f831bfc8ca3326910800000000000000
+      internalID: 1829081214858498959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 588328e30d30ebde0800000000000000
+      internalID: -1315609848208803707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 676ffabcbf1f88710800000000000000
+      internalID: 1695871323461383798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce145aa1b20d1510800000000000000
+      internalID: 1521375211211202245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d2c7d2c575ce9f70800000000000000
+      internalID: 9196004598707897041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c50eb2a99e3570de0800000000000000
+      internalID: -1367031699104604068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 252672dd8624c54d0800000000000000
+      internalID: -3144565421657071022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49ea66a7e00396900800000000000000
+      internalID: 678126057637195412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e8adb774cd675c0800000000000000
+      internalID: -4217941801407181285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4712fc80c1712bcf0800000000000000
+      internalID: -238102421122899596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a50445f8c6b1f1e0800000000000000
+      internalID: -2165748971563907675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5600d931154c50c0800000000000000
+      internalID: -4585714380283312545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de5ca10146c6e3b0800000000000000
+      internalID: -5483477513773752616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06106dc64cafb9650800000000000000
+      internalID: 6240857430198452576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e6bf0261096a6cf0800000000000000
+      internalID: -258278573959301401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 453320cf42add9f60800000000000000
+      internalID: 8042824361935254356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cfe29c631eaeaef0800000000000000
+      internalID: -94947143679021113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0d275416d905e10800000000000000
+      internalID: 2184418860377231524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a2e6b3a8d2371540800000000000000
+      internalID: 4978503819122369191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b66d7ebe2ac4f20800000000000000
+      internalID: 3408278152103226140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50815e52076cc1f30800000000000000
+      internalID: 4547727908711766021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aa83b1ac56ba6d10800000000000000
+      internalID: 2119707083597384353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59ecaa6395124f6e0800000000000000
+      internalID: -1804780883615756651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca3cc94b0062d57f0800000000000000
+      internalID: -622299389035232340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b40d2f362086f40800000000000000
+      internalID: 5721825954872970099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 731820a13e2050f40800000000000000
+      internalID: 5693960478297063735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49800acc9220ebf00800000000000000
+      internalID: 1134346534693898388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f1c74a614c2a820800000000000000
+      internalID: 2928118309272166274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf7d86066df2a35d0800000000000000
+      internalID: -3082098397194692612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a47c0d847e80c3a60800000000000000
+      internalID: 7655003256075110218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5360375598f9780800000000000000
+      internalID: -8674063357197273615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9244ccc81cfbede90800000000000000
+      internalID: -6998945932875381719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98832c5146a7b1e30800000000000000
+      internalID: 4475305225003088009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 057c16e83a383c910800000000000000
+      internalID: 1856472209898456912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3543e7084a9b4f140800000000000000
+      internalID: 4752627622964245587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 125a36c53870bb270800000000000000
+      internalID: 8267209801740821793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b24845fa279c3460800000000000000
+      internalID: 7222814113155007161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a730a9267b212a70800000000000000
+      internalID: 8800362933363160995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d25169f9393f891d0800000000000000
+      internalID: -3343654907959438035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8cb1ff358c2c5f30800000000000000
+      internalID: 4565573073061919883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3be066af8130970800000000000000
+      internalID: 8719840767252542430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7136d10178d3010800000000000000
+      internalID: 1170239981468456942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57e68e939104c91a0800000000000000
+      internalID: -6801490860146397579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0d8b28b67678ba0800000000000000
+      internalID: -6086782659915624204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68509fa6e4b566e20800000000000000
+      internalID: 3343460165729453446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f053cf068fcc99480800000000000000
+      internalID: -8891850622115236593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f24de996918aa2820800000000000000
+      internalID: 2894310537638630447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7213673bef03420800000000000000
+      internalID: 2607864230983051225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6f9e93d22d562b30800000000000000
+      internalID: 4262196501513412460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae1b77bccd2f1f80800000000000000
+      internalID: -8133732044732948829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 146cdb34f2d8af870800000000000000
+      internalID: 8717435262868506177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Idle_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d8082c3f147334e0800000000000000
+      internalID: -2003129731747673901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Orange-Idle_0: -7909659117815045540
+      Orange-Idle_1: -3008066479068069266
+      Orange-Idle_10: 1695871323461383798
+      Orange-Idle_11: 1521375211211202245
+      Orange-Idle_12: 9196004598707897041
+      Orange-Idle_13: -1367031699104604068
+      Orange-Idle_14: -3144565421657071022
+      Orange-Idle_15: 678126057637195412
+      Orange-Idle_16: -4217941801407181285
+      Orange-Idle_17: -238102421122899596
+      Orange-Idle_18: -2165748971563907675
+      Orange-Idle_19: -4585714380283312545
+      Orange-Idle_2: -3255241764925609811
+      Orange-Idle_20: -5483477513773752616
+      Orange-Idle_21: 6240857430198452576
+      Orange-Idle_22: -258278573959301401
+      Orange-Idle_23: 8042824361935254356
+      Orange-Idle_24: -94947143679021113
+      Orange-Idle_25: 2184418860377231524
+      Orange-Idle_26: 4978503819122369191
+      Orange-Idle_27: 3408278152103226140
+      Orange-Idle_28: 4547727908711766021
+      Orange-Idle_29: 2119707083597384353
+      Orange-Idle_3: 9038111925700845783
+      Orange-Idle_30: -1804780883615756651
+      Orange-Idle_31: -622299389035232340
+      Orange-Idle_32: 5721825954872970099
+      Orange-Idle_33: 5693960478297063735
+      Orange-Idle_34: 1134346534693898388
+      Orange-Idle_35: 2928118309272166274
+      Orange-Idle_36: -3082098397194692612
+      Orange-Idle_37: 7655003256075110218
+      Orange-Idle_38: -8674063357197273615
+      Orange-Idle_39: -6998945932875381719
+      Orange-Idle_4: 291269501821718994
+      Orange-Idle_40: 4475305225003088009
+      Orange-Idle_41: 1856472209898456912
+      Orange-Idle_42: 4752627622964245587
+      Orange-Idle_43: 8267209801740821793
+      Orange-Idle_44: 7222814113155007161
+      Orange-Idle_45: 8800362933363160995
+      Orange-Idle_46: -3343654907959438035
+      Orange-Idle_47: 4565573073061919883
+      Orange-Idle_48: 8719840767252542430
+      Orange-Idle_49: 1170239981468456942
+      Orange-Idle_5: 6459352436018547809
+      Orange-Idle_50: -6801490860146397579
+      Orange-Idle_51: -6086782659915624204
+      Orange-Idle_52: 3343460165729453446
+      Orange-Idle_53: -8891850622115236593
+      Orange-Idle_54: 2894310537638630447
+      Orange-Idle_55: 2607864230983051225
+      Orange-Idle_56: 4262196501513412460
+      Orange-Idle_57: -8133732044732948829
+      Orange-Idle_58: 8717435262868506177
+      Orange-Idle_59: -2003129731747673901
+      Orange-Idle_6: 8784124523202952456
+      Orange-Idle_7: -6956674476568214001
+      Orange-Idle_8: 1829081214858498959
+      Orange-Idle_9: -1315609848208803707
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

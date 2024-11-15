@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 16860c5712b617e4097d621b9e06ede9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gemtree-fade-away_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb16d3433e2f6fe70800000000000000
+      internalID: 9148766750697677247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68f6a9c8661128b0800000000000000
+      internalID: -5178833457183786899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b66ba68b20098f0800000000000000
+      internalID: -535925364569511115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0b3196be962bc20800000000000000
+      internalID: 3220753143324455148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf6c02a19fbbfd440800000000000000
+      internalID: 4962891992945182460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de2d8eb3ce9a67b00800000000000000
+      internalID: 826034413751554797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 509ee81b138523870800000000000000
+      internalID: 8661082003842459909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f513e1cb62e03c7e0800000000000000
+      internalID: -1746536670961979041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7488ba8cc4244abc0800000000000000
+      internalID: -3772817690278000569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b599ac401b2014f0800000000000000
+      internalID: -860140179822111305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d7e9c663b3d724a0800000000000000
+      internalID: -6618088359920539695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff0827ab02f981790800000000000000
+      internalID: -7559117011625541377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6587b7d66de07b10800000000000000
+      internalID: 1977341262377223534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31633581dc673f270800000000000000
+      internalID: 8283094762912953875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fca9c50fb947e2a0800000000000000
+      internalID: -6708312035160380171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deddb792438715f80800000000000000
+      internalID: -8119576487742677523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d1c57cbf7e53cdc0800000000000000
+      internalID: -3619945772760055339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f86772810e06b60800000000000000
+      internalID: 7737430554168430336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ec1a507850d3e6b0800000000000000
+      internalID: -5268138060832695066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ac64425d270c30a0800000000000000
+      internalID: -6900632637803303772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 082834437b03fa940800000000000000
+      internalID: 5309516049107092096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ca3661c680ecdec0800000000000000
+      internalID: -3540708337645110583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5cd32e94dde977c0800000000000000
+      internalID: -4072962890537903010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88740a91bfa7082f0800000000000000
+      internalID: -972642300626712696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508080ce7131f9180800000000000000
+      internalID: -9106538928054728699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a40fa98a2c5e0090800000000000000
+      internalID: -8066408544805649239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22b11e329ca2aed00800000000000000
+      internalID: 1002660910422104866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 126f80a43703ed170800000000000000
+      internalID: 8205048842837095969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c37118248dc95c0800000000000000
+      internalID: -4207250171725661034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5268dfc6253c2580800000000000000
+      internalID: -8850640726877773222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acca528d3514a61c0800000000000000
+      internalID: -4509720248493691702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 281846296bd7a6b00800000000000000
+      internalID: 822608105042116994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bfb93e021df66340800000000000000
+      internalID: 4856847502155562935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b0e40fde281200c0800000000000000
+      internalID: -4611096478884765512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd55c3b24f9728f0800000000000000
+      internalID: -565308119378993697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 867d7783d306c0430800000000000000
+      internalID: 3750478405749430120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ee380baa998e3b80800000000000000
+      internalID: -8413135756494094615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ff2a63d969959b0800000000000000
+      internalID: -5090872301794951400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebb3bdc301dca1ec0800000000000000
+      internalID: -3595335882877748290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32f279e6a46c20010800000000000000
+      internalID: 1153702477545549603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d07b1997811c55b0800000000000000
+      internalID: -5378404580900245290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1b7bb5707a1861f0800000000000000
+      internalID: -1051561442677130468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c7909e6d7031340800000000000000
+      internalID: 4833215444712782888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 680fe9316b6435cc0800000000000000
+      internalID: -3723554719078092666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcbb3b8f959111090800000000000000
+      internalID: -8065637583428535349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb27c622fa5b0c180800000000000000
+      internalID: -9097071483486965058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c2f13defc314cf0800000000000000
+      internalID: -269867437504123854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1063fc5e3e8842e80800000000000000
+      internalID: -8204282108767685119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7014439b7527e3cc0800000000000000
+      internalID: -3729417720321261305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db54b903e14c28c20800000000000000
+      internalID: 3207341518584759741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82136c678d648c430800000000000000
+      internalID: 3803367780833964328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c12e96da34809060800000000000000
+      internalID: 6958206812531073476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8fecc67dd00470c0800000000000000
+      internalID: -4579033969948037233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3678902d2ded15d60800000000000000
+      internalID: 7877322220296046435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e478d38e9eaed3180800000000000000
+      internalID: -9133886178892871858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1495810e7dccad80800000000000000
+      internalID: -8237983677292375012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a2a6c98e2e07420800000000000000
+      internalID: 2625848071441492528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3e83d4b0c0eb990800000000000000
+      internalID: -7368438697651805229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48091a7c57991ad0800000000000000
+      internalID: -2730985275582248883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-fade-away_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d839e5c2bfefd590800000000000000
+      internalID: -7647130091148199723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gemtree-fade-away_0: 9148766750697677247
+      gemtree-fade-away_1: -5178833457183786899
+      gemtree-fade-away_10: -6618088359920539695
+      gemtree-fade-away_11: -7559117011625541377
+      gemtree-fade-away_12: 1977341262377223534
+      gemtree-fade-away_13: 8283094762912953875
+      gemtree-fade-away_14: -6708312035160380171
+      gemtree-fade-away_15: -8119576487742677523
+      gemtree-fade-away_16: -3619945772760055339
+      gemtree-fade-away_17: 7737430554168430336
+      gemtree-fade-away_18: -5268138060832695066
+      gemtree-fade-away_19: -6900632637803303772
+      gemtree-fade-away_2: -535925364569511115
+      gemtree-fade-away_20: 5309516049107092096
+      gemtree-fade-away_21: -3540708337645110583
+      gemtree-fade-away_22: -4072962890537903010
+      gemtree-fade-away_23: -972642300626712696
+      gemtree-fade-away_24: -9106538928054728699
+      gemtree-fade-away_25: -8066408544805649239
+      gemtree-fade-away_26: 1002660910422104866
+      gemtree-fade-away_27: 8205048842837095969
+      gemtree-fade-away_28: -4207250171725661034
+      gemtree-fade-away_29: -8850640726877773222
+      gemtree-fade-away_3: 3220753143324455148
+      gemtree-fade-away_30: -4509720248493691702
+      gemtree-fade-away_31: 822608105042116994
+      gemtree-fade-away_32: 4856847502155562935
+      gemtree-fade-away_33: -4611096478884765512
+      gemtree-fade-away_34: -565308119378993697
+      gemtree-fade-away_35: 3750478405749430120
+      gemtree-fade-away_36: -8413135756494094615
+      gemtree-fade-away_37: -5090872301794951400
+      gemtree-fade-away_38: -3595335882877748290
+      gemtree-fade-away_39: 1153702477545549603
+      gemtree-fade-away_4: 4962891992945182460
+      gemtree-fade-away_40: -5378404580900245290
+      gemtree-fade-away_41: -1051561442677130468
+      gemtree-fade-away_42: 4833215444712782888
+      gemtree-fade-away_43: -3723554719078092666
+      gemtree-fade-away_44: -8065637583428535349
+      gemtree-fade-away_45: -9097071483486965058
+      gemtree-fade-away_46: -269867437504123854
+      gemtree-fade-away_47: -8204282108767685119
+      gemtree-fade-away_48: -3729417720321261305
+      gemtree-fade-away_49: 3207341518584759741
+      gemtree-fade-away_5: 826034413751554797
+      gemtree-fade-away_50: 3803367780833964328
+      gemtree-fade-away_51: 6958206812531073476
+      gemtree-fade-away_52: -4579033969948037233
+      gemtree-fade-away_53: 7877322220296046435
+      gemtree-fade-away_54: -9133886178892871858
+      gemtree-fade-away_55: -8237983677292375012
+      gemtree-fade-away_56: 2625848071441492528
+      gemtree-fade-away_57: -7368438697651805229
+      gemtree-fade-away_58: -2730985275582248883
+      gemtree-fade-away_59: -7647130091148199723
+      gemtree-fade-away_6: 8661082003842459909
+      gemtree-fade-away_7: -1746536670961979041
+      gemtree-fade-away_8: -3772817690278000569
+      gemtree-fade-away_9: -860140179822111305
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

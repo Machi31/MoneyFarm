@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 76c0ec3d5fec3bd4cb243dd75556d87b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Orange-Grow_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26b761b54e220400800000000000000
+      internalID: 288844202969118253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79566a303407f2410800000000000000
+      internalID: 1454504637790315927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a53fe34493a82890800000000000000
+      internalID: -7482550923685841495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e203d568c282e690800000000000000
+      internalID: -7574347826070355224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c147d67d02289f4e0800000000000000
+      internalID: -1947382286296189924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592f4d6e544359590800000000000000
+      internalID: -7668165315698298219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b470718104cb2be0800000000000000
+      internalID: -1500890540052286287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e03ff93f5d869b80800000000000000
+      internalID: -8388361815796535063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 301d9f16f55b9d020800000000000000
+      internalID: 2367122500430188803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82351cfac6c98b770800000000000000
+      internalID: 8626817076847268648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f57705e75d072290800000000000000
+      internalID: -7915343148924570119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0ef36da9b4c1c70800000000000000
+      internalID: 8943106088442519806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75d0334c58e59ca50800000000000000
+      internalID: 6541863862347697495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307bbfc8020b12810800000000000000
+      internalID: 1738864584992470787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436a3821b8dd04e10800000000000000
+      internalID: 2179985809028130356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3991545d96e3aa2e0800000000000000
+      internalID: -2113808450826462829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cb1537f6f17a6470800000000000000
+      internalID: 8388642561454316484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 439c9923c12d0b5e0800000000000000
+      internalID: -1895784424573122252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5714e0bc65dd2fdf0800000000000000
+      internalID: -147812472906169995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e11de67a247c53e0800000000000000
+      internalID: -2063646803509833243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70a6d56c5b0dbf60800000000000000
+      internalID: 8051604200281776253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec07337eecf99710800000000000000
+      internalID: 1700668435374476520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a160f322589e0b130800000000000000
+      internalID: 3580618461774022170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3553ec0eb76d31030800000000000000
+      internalID: 3464348365918975315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42adff0cefe76f6d0800000000000000
+      internalID: -2957036472697365980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b86981f1e3cb035a0800000000000000
+      internalID: -6543523283573631349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334e3b05725153960800000000000000
+      internalID: 7580988806349972531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bba0034cb88e5460800000000000000
+      internalID: 7232368393762941881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30af451bd45a08560800000000000000
+      internalID: 7314027547955886595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0698af21a86ccd500800000000000000
+      internalID: 422430761392179552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf72f25b0f26e5b0800000000000000
+      internalID: -5339528582518374436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ab13c7a93ca39250800000000000000
+      internalID: 5950288896314252197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c95044cb1a0ae10800000000000000
+      internalID: 2206941647378685001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2330222d1d4b9c40800000000000000
+      internalID: 5520090555794600746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a461623928504e0800000000000000
+      internalID: -2016061689667630500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4835b6353a01810800000000000000
+      internalID: 1734065435215889663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d80adde0e7de400800000000000000
+      internalID: 355078547945065848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5cc53c22da79f350800000000000000
+      internalID: 6051002617452416093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2caac737cd6508690800000000000000
+      internalID: -7601980666171053374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e7edb59dd52b6280800000000000000
+      internalID: -9049097392640628764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4459a02a6f6e0a9d0800000000000000
+      internalID: -2764956224250538684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6fe15a18d94103d0800000000000000
+      internalID: -3242229064226705555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eea3478dc8d1be70800000000000000
+      internalID: 9129316296905961192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c58beacde02aea00800000000000000
+      internalID: 786477290613343682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad535bbcad81aac10800000000000000
+      internalID: 2065490707102381530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8134ad7b6da59950800000000000000
+      internalID: 6455256318086492554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3990998cba32ff50800000000000000
+      internalID: 6913652959403350335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c239ba057546322f0800000000000000
+      internalID: -998844366167764180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d4185c5f26ade970800000000000000
+      internalID: 8785861170412655826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 040b56def9d32d5a0800000000000000
+      internalID: -6498063555250245568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5810b4bfee782add0800000000000000
+      internalID: -2476267384612388475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15acb1c24633866a0800000000000000
+      internalID: -6455853560505841071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b875cc2c7411680f0800000000000000
+      internalID: -1115184857819097205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 791d23fd40ecb4280800000000000000
+      internalID: -9057919705205780073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60cf4cccf9fe38d0800000000000000
+      internalID: -2864577448806203281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1bad96a4e80ca0a0800000000000000
+      internalID: -6869105553505932518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2866dcc1b6ef8ea10800000000000000
+      internalID: 1939079375581177474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d90ad96d5a3a0930800000000000000
+      internalID: 4110161782811265488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf38cd31a2daac420800000000000000
+      internalID: 2651121726894408700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Orange-Grow_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303f7409a129e6730800000000000000
+      internalID: 3994290562311648003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Orange-Grow_0: 288844202969118253
+      Orange-Grow_1: 1454504637790315927
+      Orange-Grow_10: -7915343148924570119
+      Orange-Grow_11: 8943106088442519806
+      Orange-Grow_12: 6541863862347697495
+      Orange-Grow_13: 1738864584992470787
+      Orange-Grow_14: 2179985809028130356
+      Orange-Grow_15: -2113808450826462829
+      Orange-Grow_16: 8388642561454316484
+      Orange-Grow_17: -1895784424573122252
+      Orange-Grow_18: -147812472906169995
+      Orange-Grow_19: -2063646803509833243
+      Orange-Grow_2: -7482550923685841495
+      Orange-Grow_20: 8051604200281776253
+      Orange-Grow_21: 1700668435374476520
+      Orange-Grow_22: 3580618461774022170
+      Orange-Grow_23: 3464348365918975315
+      Orange-Grow_24: -2957036472697365980
+      Orange-Grow_25: -6543523283573631349
+      Orange-Grow_26: 7580988806349972531
+      Orange-Grow_27: 7232368393762941881
+      Orange-Grow_28: 7314027547955886595
+      Orange-Grow_29: 422430761392179552
+      Orange-Grow_3: -7574347826070355224
+      Orange-Grow_30: -5339528582518374436
+      Orange-Grow_31: 5950288896314252197
+      Orange-Grow_32: 2206941647378685001
+      Orange-Grow_33: 5520090555794600746
+      Orange-Grow_34: -2016061689667630500
+      Orange-Grow_35: 1734065435215889663
+      Orange-Grow_36: 355078547945065848
+      Orange-Grow_37: 6051002617452416093
+      Orange-Grow_38: -7601980666171053374
+      Orange-Grow_39: -9049097392640628764
+      Orange-Grow_4: -1947382286296189924
+      Orange-Grow_40: -2764956224250538684
+      Orange-Grow_41: -3242229064226705555
+      Orange-Grow_42: 9129316296905961192
+      Orange-Grow_43: 786477290613343682
+      Orange-Grow_44: 2065490707102381530
+      Orange-Grow_45: 6455256318086492554
+      Orange-Grow_46: 6913652959403350335
+      Orange-Grow_47: -998844366167764180
+      Orange-Grow_48: 8785861170412655826
+      Orange-Grow_49: -6498063555250245568
+      Orange-Grow_5: -7668165315698298219
+      Orange-Grow_50: -2476267384612388475
+      Orange-Grow_51: -6455853560505841071
+      Orange-Grow_52: -1115184857819097205
+      Orange-Grow_53: -9057919705205780073
+      Orange-Grow_54: -2864577448806203281
+      Orange-Grow_55: -6869105553505932518
+      Orange-Grow_56: 1939079375581177474
+      Orange-Grow_57: 4110161782811265488
+      Orange-Grow_58: 2651121726894408700
+      Orange-Grow_59: 3994290562311648003
+      Orange-Grow_6: -1500890540052286287
+      Orange-Grow_7: -8388361815796535063
+      Orange-Grow_8: 2367122500430188803
+      Orange-Grow_9: 8626817076847268648
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

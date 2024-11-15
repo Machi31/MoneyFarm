@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 38436ac85d6d7f44786546a8b77694ee
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BushMoney-Idele_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2affb6d4fe28ef90800000000000000
+      internalID: -6924232797972334037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6e8c0618c47e3fa0800000000000000
+      internalID: -5819085265803899285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf5de3fe40c3fae30800000000000000
+      internalID: 4516894943167305211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a1d481232fe4fde0800000000000000
+      internalID: -1300151458237984349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d728a7b723bbc090800000000000000
+      internalID: -8013114128809318440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf0af6928a8e78c00800000000000000
+      internalID: 902946059258405115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df11caf81df1ce000800000000000000
+      internalID: 66463079422759421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1731070214586f5e0800000000000000
+      internalID: -1876165679989648527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23f209e1ec14f5c0800000000000000
+      internalID: -4182686397317844179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e76619116fb21f540800000000000000
+      internalID: 5039857793860986494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e030730ac7ebb990800000000000000
+      internalID: -7369041510434590494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdf47ba150beeb660800000000000000
+      internalID: 7403613244599259100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ad80ec4cb11a1850800000000000000
+      internalID: 6348406125173444002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ada1e9f059afa400800000000000000
+      internalID: 337674662330871202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100b13e0345b996c0800000000000000
+      internalID: -4136075483157516287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 624639d5a10814e20800000000000000
+      internalID: 3333086049958323238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d512897ed0038cd0800000000000000
+      internalID: -2557199207895001639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ff38922b03b28a0800000000000000
+      internalID: -6328911309580271835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87170b80306628ce0800000000000000
+      internalID: -1404447970569457288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 331
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 573caf34231b5cae0800000000000000
+      internalID: -1529621668975426699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d15f3f253effb0850800000000000000
+      internalID: 6344445851895854365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454168109e0ed8a60800000000000000
+      internalID: 7678040231094129748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36904acadfe30fd20800000000000000
+      internalID: 3310214985361394019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f9ad9755cf5f490800000000000000
+      internalID: -7712981342755315809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2624feb7c3cc3280800000000000000
+      internalID: -9062153087506700755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00d7ce98fb5e3e8e0800000000000000
+      internalID: -1665234826381460224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67a95ea530ce402c0800000000000000
+      internalID: -4466185431290635658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc13027de057ed450800000000000000
+      internalID: 6115454050614915532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abcc43c3feb448a80800000000000000
+      internalID: -8465557908670329670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 661
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a43d104c2d0feff70800000000000000
+      internalID: 9223073874923606858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b598029fe831190800000000000000
+      internalID: -7992887713008624870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b20f519ebe1208a40800000000000000
+      internalID: 5368328052937191467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f38a6062bea2fccc0800000000000000
+      internalID: -3688682380349495233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4335b289f062e8d0800000000000000
+      internalID: -2818583792024472756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80be6e2245778d8c0800000000000000
+      internalID: -3974295467907945720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70e700ba8f24fd60800000000000000
+      internalID: 7923009917156843647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 986dcd13d4deab140800000000000000
+      internalID: 4736358873938318985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d4f60738731194d0800000000000000
+      internalID: -3129698859005578025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96a6277282c43e470800000000000000
+      internalID: 8422659463457172073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 991
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9096d3a2bd12d5a0800000000000000
+      internalID: -6498098659252072294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2574c0557815b5b0800000000000000
+      internalID: -5353345689914673876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e66b518a898edb190800000000000000
+      internalID: -7944938425259018642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6b706364be897e00800000000000000
+      internalID: 1043021694125505387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 727d67830983447f0800000000000000
+      internalID: -629315855851268313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eee9e7fcdb12bf80800000000000000
+      internalID: -8092374944565301535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590cd8440b222ca00800000000000000
+      internalID: 775220226320875669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7758b44e9908eddc0800000000000000
+      internalID: -3612308452656052873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ef309351bf1ee90800000000000000
+      internalID: -6998036277387592086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fe420412acb094b0800000000000000
+      internalID: -5435637345929769225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1321
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de76d54481a87a60800000000000000
+      internalID: 7672059554705080024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0f6df6bf9735700800000000000000
+      internalID: 527899702152589515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b00c544f07297370800000000000000
+      internalID: 8320724733068574901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c39f3987abb434390800000000000000
+      internalID: -7835335662435567300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9effba9227eb72a60800000000000000
+      internalID: 7649291889646764009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76862acb0a08f8100800000000000000
+      internalID: 112449943555434599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6357d23915868b500800000000000000
+      internalID: 412194065475269942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0a2c364d991ee350800000000000000
+      internalID: 6047799512884062730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 367265976e46f0760800000000000000
+      internalID: 7426265251598182243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff8e1e6764b55740800000000000000
+      internalID: 5140212906035417083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BushMoney-Idele_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1651
+        width: 360
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51665f243d43041b0800000000000000
+      internalID: -5674477448520702443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BushMoney-Idele_0: -6924232797972334037
+      BushMoney-Idele_1: -5819085265803899285
+      BushMoney-Idele_10: -7369041510434590494
+      BushMoney-Idele_11: 7403613244599259100
+      BushMoney-Idele_12: 6348406125173444002
+      BushMoney-Idele_13: 337674662330871202
+      BushMoney-Idele_14: -4136075483157516287
+      BushMoney-Idele_15: 3333086049958323238
+      BushMoney-Idele_16: -2557199207895001639
+      BushMoney-Idele_17: -6328911309580271835
+      BushMoney-Idele_18: -1404447970569457288
+      BushMoney-Idele_19: -1529621668975426699
+      BushMoney-Idele_2: 4516894943167305211
+      BushMoney-Idele_20: 6344445851895854365
+      BushMoney-Idele_21: 7678040231094129748
+      BushMoney-Idele_22: 3310214985361394019
+      BushMoney-Idele_23: -7712981342755315809
+      BushMoney-Idele_24: -9062153087506700755
+      BushMoney-Idele_25: -1665234826381460224
+      BushMoney-Idele_26: -4466185431290635658
+      BushMoney-Idele_27: 6115454050614915532
+      BushMoney-Idele_28: -8465557908670329670
+      BushMoney-Idele_29: 9223073874923606858
+      BushMoney-Idele_3: -1300151458237984349
+      BushMoney-Idele_30: -7992887713008624870
+      BushMoney-Idele_31: 5368328052937191467
+      BushMoney-Idele_32: -3688682380349495233
+      BushMoney-Idele_33: -2818583792024472756
+      BushMoney-Idele_34: -3974295467907945720
+      BushMoney-Idele_35: 7923009917156843647
+      BushMoney-Idele_36: 4736358873938318985
+      BushMoney-Idele_37: -3129698859005578025
+      BushMoney-Idele_38: 8422659463457172073
+      BushMoney-Idele_39: -6498098659252072294
+      BushMoney-Idele_4: -8013114128809318440
+      BushMoney-Idele_40: -5353345689914673876
+      BushMoney-Idele_41: -7944938425259018642
+      BushMoney-Idele_42: 1043021694125505387
+      BushMoney-Idele_43: -629315855851268313
+      BushMoney-Idele_44: -8092374944565301535
+      BushMoney-Idele_45: 775220226320875669
+      BushMoney-Idele_46: -3612308452656052873
+      BushMoney-Idele_47: -6998036277387592086
+      BushMoney-Idele_48: -5435637345929769225
+      BushMoney-Idele_49: 7672059554705080024
+      BushMoney-Idele_5: 902946059258405115
+      BushMoney-Idele_50: 527899702152589515
+      BushMoney-Idele_51: 8320724733068574901
+      BushMoney-Idele_52: -7835335662435567300
+      BushMoney-Idele_53: 7649291889646764009
+      BushMoney-Idele_54: 112449943555434599
+      BushMoney-Idele_55: 412194065475269942
+      BushMoney-Idele_56: 6047799512884062730
+      BushMoney-Idele_57: 7426265251598182243
+      BushMoney-Idele_58: 5140212906035417083
+      BushMoney-Idele_59: -5674477448520702443
+      BushMoney-Idele_6: 66463079422759421
+      BushMoney-Idele_7: -1876165679989648527
+      BushMoney-Idele_8: -4182686397317844179
+      BushMoney-Idele_9: 5039857793860986494
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

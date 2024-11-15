@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 11c3aca104e4d834eab75893ed7ee54b
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gemtree-grow_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09dba23d2aeb9440800000000000000
+      internalID: 4943802495813802254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f211fbd3b13e81e90800000000000000
+      internalID: -7054639110136327889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_2
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c647dadcdff0c3170800000000000000
+      internalID: 8159414207640335468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_3
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfaff19821c804650800000000000000
+      internalID: 6215121497009158909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_4
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1aaf533c5719270800000000000000
+      internalID: 8255509073231520244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_5
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9298e4071b61ee5b0800000000000000
+      internalID: -5337303557038241495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_6
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea817fe805d390fe0800000000000000
+      internalID: -1222378407649142610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_7
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 492b3eba86fdceb00800000000000000
+      internalID: 859307269574341268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_8
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f991f5e6e235d7a50800000000000000
+      internalID: 6520459294387673503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_9
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91241a0e419df3650800000000000000
+      internalID: 6214924694485811737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_10
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048a94763e3a284e0800000000000000
+      internalID: -1980840689003812800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efeecd17c66556370800000000000000
+      internalID: 8315147310776250110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_12
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a9769f88a996ff0800000000000000
+      internalID: -42332808392762819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_13
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e898c11056336df0800000000000000
+      internalID: -188247041895786270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_14
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc36bb0580a51b240800000000000000
+      internalID: 4805721269141726156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_15
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed2617d1344e8b00800000000000000
+      internalID: 832677961962761711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_16
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570594b07b19cd9e0800000000000000
+      internalID: -1595239952641601419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_17
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9377c8bfddc7f90800000000000000
+      internalID: -6954439652103734850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_18
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabdc37417b812df0800000000000000
+      internalID: -206730789239596113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_19
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 330
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ec39a33a14427970800000000000000
+      internalID: 8751131905260862688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9b9205fba1010240800000000000000
+      internalID: 4756084519541578654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7311d49449265da40800000000000000
+      internalID: 5392324517870506295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_22
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c6abeeb892e8180800000000000000
+      internalID: -9111299315141546881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_23
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcf4c5c58e9c11220800000000000000
+      internalID: 2454965271712780235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_24
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33720ce1ac772f20800000000000000
+      internalID: 3397821478765491004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_25
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f2e3e5d2dbf2440800000000000000
+      internalID: 4913353721036812137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_26
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80b7752d047ed72f0800000000000000
+      internalID: -973367678849287416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_27
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aed9b5ff7ef3da20800000000000000
+      internalID: 3086089995215822499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_28
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e330cd5da23e345b0800000000000000
+      internalID: -5385210956288883906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_29
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 659
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a722986e97f86f540800000000000000
+      internalID: 5041374586609410682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_30
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62eea2fae68164d70800000000000000
+      internalID: 9026929366775033382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_31
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac5f5adf5d835f230800000000000000
+      internalID: 3671903562925209034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_32
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6cb41aa8e0b52590800000000000000
+      internalID: -7699553474587607954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_33
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4057718b9d8028280800000000000000
+      internalID: -9042655370617064188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_34
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65dde7e76360491a0800000000000000
+      internalID: -6803806305929732778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_35
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62b5d6271b61cf7d0800000000000000
+      internalID: -2883404710039168218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_36
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d3367282bbb6ab60800000000000000
+      internalID: 7757093783559615446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_37
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3ef5ef8266e89ba0800000000000000
+      internalID: -6081857985768456641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_38
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e63d36678d7121d0800000000000000
+      internalID: -3377280225061816599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_39
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 988
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c759389ae50b557d0800000000000000
+      internalID: -2930242061917252228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6449f8e8d2a8d44f0800000000000000
+      internalID: -842865626978479034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_41
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4360850b2379e6640800000000000000
+      internalID: 5075160074055845428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_42
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4735cc7903e384150800000000000000
+      internalID: 5856999693821432692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_43
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d8956e76f4c8afc0800000000000000
+      internalID: -3483317748809492267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2616388f781319240800000000000000
+      internalID: 4796669538185994594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_45
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148723d8e56581950800000000000000
+      internalID: 6419976232912451649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_46
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a425dffdf60c290800000000000000
+      internalID: -7872169140825208208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_47
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488a405273b66dac0800000000000000
+      internalID: -3830756548443592572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_48
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c90d902c9d307230800000000000000
+      internalID: 3634472640059345352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_49
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1317
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6654be6a1b03a1ec0800000000000000
+      internalID: -3595507812934138522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_50
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb9bea1cc5383920800000000000000
+      internalID: 2970183104992091119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_51
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d835a47777e21230800000000000000
+      internalID: 3608200751721298134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_52
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f976c3648fb2a64d0800000000000000
+      internalID: -3140649444807252065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_53
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14923bd089ffe910800000000000000
+      internalID: 1868986702210700316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_54
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6207b47b130ac1ef0800000000000000
+      internalID: -136057753338941402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_55
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa7aea5d6977c2d70800000000000000
+      internalID: 9019715643430053807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_56
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a686ba17585e664c0800000000000000
+      internalID: -4294492833350719382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_57
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd806f785d20e3180800000000000000
+      internalID: -9133859878128449317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_58
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bd1356e2d7875a0800000000000000
+      internalID: -6523326422026429592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gemtree-grow_59
+      rect:
+        serializedVersion: 2
+        x: 3259
+        y: 1646
+        width: 360
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04a5f8fd941275290800000000000000
+      internalID: -7901810420031202752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      gemtree-grow_0: 4943802495813802254
+      gemtree-grow_1: -7054639110136327889
+      gemtree-grow_10: -1980840689003812800
+      gemtree-grow_11: 8315147310776250110
+      gemtree-grow_12: -42332808392762819
+      gemtree-grow_13: -188247041895786270
+      gemtree-grow_14: 4805721269141726156
+      gemtree-grow_15: 832677961962761711
+      gemtree-grow_16: -1595239952641601419
+      gemtree-grow_17: -6954439652103734850
+      gemtree-grow_18: -206730789239596113
+      gemtree-grow_19: 8751131905260862688
+      gemtree-grow_2: 8159414207640335468
+      gemtree-grow_20: 4756084519541578654
+      gemtree-grow_21: 5392324517870506295
+      gemtree-grow_22: -9111299315141546881
+      gemtree-grow_23: 2454965271712780235
+      gemtree-grow_24: 3397821478765491004
+      gemtree-grow_25: 4913353721036812137
+      gemtree-grow_26: -973367678849287416
+      gemtree-grow_27: 3086089995215822499
+      gemtree-grow_28: -5385210956288883906
+      gemtree-grow_29: 5041374586609410682
+      gemtree-grow_3: 6215121497009158909
+      gemtree-grow_30: 9026929366775033382
+      gemtree-grow_31: 3671903562925209034
+      gemtree-grow_32: -7699553474587607954
+      gemtree-grow_33: -9042655370617064188
+      gemtree-grow_34: -6803806305929732778
+      gemtree-grow_35: -2883404710039168218
+      gemtree-grow_36: 7757093783559615446
+      gemtree-grow_37: -6081857985768456641
+      gemtree-grow_38: -3377280225061816599
+      gemtree-grow_39: -2930242061917252228
+      gemtree-grow_4: 8255509073231520244
+      gemtree-grow_40: -842865626978479034
+      gemtree-grow_41: 5075160074055845428
+      gemtree-grow_42: 5856999693821432692
+      gemtree-grow_43: -3483317748809492267
+      gemtree-grow_44: 4796669538185994594
+      gemtree-grow_45: 6419976232912451649
+      gemtree-grow_46: -7872169140825208208
+      gemtree-grow_47: -3830756548443592572
+      gemtree-grow_48: 3634472640059345352
+      gemtree-grow_49: -3595507812934138522
+      gemtree-grow_5: -5337303557038241495
+      gemtree-grow_50: 2970183104992091119
+      gemtree-grow_51: 3608200751721298134
+      gemtree-grow_52: -3140649444807252065
+      gemtree-grow_53: 1868986702210700316
+      gemtree-grow_54: -136057753338941402
+      gemtree-grow_55: 9019715643430053807
+      gemtree-grow_56: -4294492833350719382
+      gemtree-grow_57: -9133859878128449317
+      gemtree-grow_58: -6523326422026429592
+      gemtree-grow_59: -7901810420031202752
+      gemtree-grow_6: -1222378407649142610
+      gemtree-grow_7: 859307269574341268
+      gemtree-grow_8: 6520459294387673503
+      gemtree-grow_9: 6214924694485811737
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
