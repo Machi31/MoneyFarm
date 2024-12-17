@@ -7,12 +7,19 @@ public class SelectFarm : MonoBehaviour
 {
     public static event Action<int> SetSelectedId;
 
+    [SerializeField] private BuyFarm _buyFarm;
+
     [SerializeField] private Image[] _image;
     [SerializeField] private float _fadeDuration = 1f;
 
     [SerializeField] private Transform[] _positions; 
     [SerializeField] private int _preselectId = 0;
     [SerializeField] private int _selectId = 0;
+
+    [SerializeField] private Button[] _farmsButton;
+    [SerializeField] private Button[] _waterButton;
+    [SerializeField] private Button[] _kultivatorButton;
+
     [SerializeField] private float _smoothSpeed = 0.125f;
     private bool _isDragging;
 
@@ -28,6 +35,12 @@ public class SelectFarm : MonoBehaviour
             initialColor.a = (i == _selectId) ? 1f : 0f;
             _image[i].color = initialColor;
         }
+        for (int i = 0; i < _farmsButton.Length; i++)
+            _farmsButton[i].interactable = _buyFarm._lvlFarm[_selectId] > 0;
+        for (int j = 0; j < _waterButton.Length; j++)
+            _waterButton[j].gameObject.SetActive(false);
+        for (int j = 0; j < _kultivatorButton.Length; j++)
+            _kultivatorButton[j].gameObject.SetActive(false);
     }
 
     private void Update()
@@ -46,6 +59,34 @@ public class SelectFarm : MonoBehaviour
                 _preselectId = _selectId;
                 _selectId = i;
                 SetSelectedId?.Invoke(_selectId);
+
+                if (_selectId < 7){
+                    for (int j = 0; j < _farmsButton.Length; j++){
+                        _farmsButton[j].gameObject.SetActive(true);
+                        _farmsButton[j].interactable = _buyFarm._lvlFarm[_selectId] > 0;
+                    }
+                    for (int j = 0; j < _waterButton.Length; j++)
+                        _waterButton[j].gameObject.SetActive(false);
+                    for (int j = 0; j < _kultivatorButton.Length; j++)
+                        _kultivatorButton[j].gameObject.SetActive(false);
+                }
+                else if (_selectId == 7){
+                    for (int j = 0; j < _farmsButton.Length; j++)
+                        _farmsButton[j].gameObject.SetActive(false);
+                    for (int j = 0; j < _waterButton.Length; j++)
+                        _waterButton[j].gameObject.SetActive(false);
+                    for (int j = 0; j < _kultivatorButton.Length; j++)
+                        _kultivatorButton[j].gameObject.SetActive(true);
+                }
+                else if (_selectId == 8){
+                    for (int j = 0; j < _farmsButton.Length; j++)
+                        _farmsButton[j].gameObject.SetActive(false);
+                    for (int j = 0; j < _kultivatorButton.Length; j++)
+                        _kultivatorButton[j].gameObject.SetActive(false);
+                    for (int j = 0; j < _waterButton.Length; j++)
+                        _waterButton[j].gameObject.SetActive(true);
+                }
+                
 
                 if (_selectId < 7 && _preselectId != 7){
                     if (_fadeCoroutine != null)

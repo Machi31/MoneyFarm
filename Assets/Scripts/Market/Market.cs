@@ -36,6 +36,15 @@ public class Market : MonoBehaviour
     [SerializeField] private int _needSell;
 
     private float _fadeDuaration = 0.5f;
+    public bool _isFirst = true;
+
+    private void Start() {
+        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
+        if (!_isFirst){
+            _costProduct = PlayerPrefsX.GetIntArray("CostProduct");
+            _countProduct = PlayerPrefsX.GetIntArray("CountProduct");
+        }
+    }
 
     private void Awake() {
         if (InstanceMarket != null && InstanceMarket != this)
@@ -161,6 +170,10 @@ public class Market : MonoBehaviour
     }
     public void MinusProduct(){
         _countProduct[_idNeedSell] -= _needSell;
+        if (_idNeedSell < 6)
+            MoneyAndGems.InstanceMG.PlusMoney(_needSell * _costProduct[_idNeedSell]);
+        else
+            MoneyAndGems.InstanceMG.PlusGem(_needSell * _costProduct[_idNeedSell]);
         _sellProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         UpdateShelf();
     }
@@ -171,6 +184,15 @@ public class Market : MonoBehaviour
     } 
 
     public void BreakSell() => _sellProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+
+    private void OnApplicationPause(bool pauseStatus) {
+        PlayerPrefsX.SetIntArray("CostProduct", _costProduct);
+        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
+    }
+    private void OnApplicationQuit() {
+        PlayerPrefsX.SetIntArray("CostProduct", _costProduct);
+        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
+    }
 
     private IEnumerator FadeOut()
     {

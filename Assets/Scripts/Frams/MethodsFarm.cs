@@ -13,6 +13,10 @@ public class MethodsFarm : MonoBehaviour
     public static event Action OpenProfile;
     public static event Action OpenWarehouse;
     public static event Action OpenMarket;
+    public static event Action CollectAll;
+    public static event Action WaterFull;
+    public static event Action PlusSpeed;
+    public static event Action SlowWater;
 
     [SerializeField] private int _selectedId;
 
@@ -25,6 +29,10 @@ public class MethodsFarm : MonoBehaviour
     [SerializeField] private Image _bgProfile;
 
     [SerializeField] private Button[] _profileButton;
+    [SerializeField] private Button _fullWaterButton;
+    [SerializeField] private Button _collectAllButton;
+    [SerializeField] private Button _plusSpeedButton;
+    [SerializeField] private Button _slowWaterButton;
 
     private float _fadeDuaration = 0.5f;
 
@@ -34,6 +42,26 @@ public class MethodsFarm : MonoBehaviour
 
     private void OnDisable(){
         SelectFarm.SetSelectedId -= UpdateSelectedId;
+    }
+
+    private void Update() {
+        if (MoneyAndGems.InstanceMG.money < 500){
+            _fullWaterButton.interactable = false;
+            _collectAllButton.interactable = false;
+        }
+        else {
+            _fullWaterButton.interactable = true;
+            _collectAllButton.interactable = true;
+        }
+
+        if (MoneyAndGems.InstanceMG.gems < 10){
+            _plusSpeedButton.interactable = false;
+            _slowWaterButton.interactable = false;
+        }
+        else {
+            _plusSpeedButton.interactable = true;
+            _slowWaterButton.interactable = true;
+        }
     }
 
     private void UpdateSelectedId(int id) => _selectedId = id;
@@ -93,6 +121,23 @@ public class MethodsFarm : MonoBehaviour
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         StartCoroutine(FadeOut());
+    }
+
+    public void CollectAllMethod(){
+        MoneyAndGems.InstanceMG.money -= 500;
+        CollectAll?.Invoke();
+    }
+    public void WaterFullMethod(){
+        MoneyAndGems.InstanceMG.money -= 500;
+        WaterFull?.Invoke();
+    }
+    public void PlusSpeedMethod(){
+        MoneyAndGems.InstanceMG.gems -= 10;
+        PlusSpeed?.Invoke();
+    }
+    public void SlowWaterMethod(){
+        MoneyAndGems.InstanceMG.gems -= 10;
+        SlowWater?.Invoke();
     }
 
     private IEnumerator FadeOut()

@@ -7,22 +7,51 @@ using UnityEngine.UI;
 public class WaterFarm : MonoBehaviour
 {
     public static event Action<int> UpdateFarm;
+    public static event Action<int, float, int> SendNeedTime;
 
     [SerializeField] private Image _image;
     [SerializeField] private float _fadeDuration = 1f;
 
     [SerializeField] private TMP_Text _waterText;
     [SerializeField] private int _selectedId;
-    [SerializeField] private int _timeToMinusWater;
+    [SerializeField] private float _timeToMinusWater;
     public int[] percentWater;
 
+    private bool _autoWaterPlus;
+    public bool _isFirst = true;
 
     private Coroutine[] _minusWater;
     private Coroutine _onlyFadeCoroutine;
     private Coroutine _onlyOutCoroutine;
 
     private void Start(){
+        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
+        _autoWaterPlus = PlayerPrefsX.GetBool("AutoWaterPlus", false);
         _minusWater = new Coroutine[percentWater.Length];
+        if (!_isFirst)
+            percentWater = PlayerPrefsX.GetIntArray("PercentWater");
+
+        float maxTime;
+        for (int i = 0; i < percentWater.Length; i++){
+            maxTime = percentWater[i] * _timeToMinusWater;
+            if (maxTime > GameManager.Instance._secondsFromExit){
+                maxTime -= GameManager.Instance._secondsFromExit;
+            }
+            int prePercent = percentWater[i];
+            percentWater[i] -= Mathf.RoundToInt(prePercent - Math.Abs(maxTime / _timeToMinusWater));
+            if (percentWater[i] < 0)
+                percentWater[i] = 0;
+            int minuspercent = prePercent - percentWater[i];
+            if (minuspercent > 0)
+                SendNeedTime?.Invoke(i, minuspercent * _timeToMinusWater, percentWater[i]);
+            else if (minuspercent == 0 && prePercent != 0)
+                SendNeedTime?.Invoke(i, GameManager.Instance._secondsFromExit, percentWater[i]);
+            if (percentWater[i] < 50 && _autoWaterPlus)
+                percentWater[i] = 100;
+            
+            UpdateFarm?.Invoke(i);
+        }
+
         _waterText.text = $"{percentWater[_selectedId]} / 100%";
         for (int i = 0; i < percentWater.Length; i++){
             if (percentWater[i] > 0)
@@ -32,12 +61,31 @@ public class WaterFarm : MonoBehaviour
 
     private void OnEnable(){
         MethodsFarm.AddWater += AddWater;
+        MethodsFarm.WaterFull += AddFullWater;
+        MethodsFarm.SlowWater += SlowWater;
         SelectFarm.SetSelectedId += UpdateSelectedId;
+        BuyFarm.BuyWater += AutoWater;
     }
 
     private void OnDisable(){
         MethodsFarm.AddWater -= AddWater;
+        MethodsFarm.WaterFull -= AddFullWater;
+        MethodsFarm.SlowWater -= SlowWater;
         SelectFarm.SetSelectedId -= UpdateSelectedId;
+        BuyFarm.BuyWater -= AutoWater;
+    }
+
+    private void AutoWater() => _autoWaterPlus = true;
+
+    private void AddFullWater(){
+        for (int i = 0; i < percentWater.Length; i++){
+            percentWater[i] = 100;
+            _waterText.text = $"{percentWater[_selectedId]} / 100%";
+        }
+    }
+
+    private void SlowWater(){
+        _timeToMinusWater += 10;
     }
 
     private void UpdateSelectedId(int id){
@@ -61,20 +109,39 @@ public class WaterFarm : MonoBehaviour
     private void AddWater(int id){
         if (percentWater[_selectedId] == 0){
             percentWater[_selectedId] += 10;
-            _waterText.text = $"{percentWater[_selectedId]} / 100%";
             _minusWater[id] = StartCoroutine(MinusWater(id));
         }
-        else{
+        else if (percentWater[_selectedId] + 10 < 100)
             percentWater[_selectedId] += 10;
-            _waterText.text = $"{percentWater[_selectedId]} / 100%";
-        }
+        else
+            percentWater[_selectedId] = 100;
+
+        _waterText.text = $"{percentWater[_selectedId]} / 100%";
         UpdateFarm?.Invoke(id);
+    }
+
+    private void OnApplicationPause(bool pauseStatus) {
+        StopAllCoroutines();
+        PlayerPrefsX.SetIntArray("PercentWater", percentWater);
+        PlayerPrefsX.SetBool("AutoWaterPlus", _autoWaterPlus);
+    }
+    private void OnApplicationQuit() {
+        StopAllCoroutines();
+        PlayerPrefsX.SetIntArray("PercentWater", percentWater);
+        PlayerPrefsX.SetBool("AutoWaterPlus", _autoWaterPlus);
     }
 
     private IEnumerator MinusWater(int id){
         yield return new WaitForSeconds(_timeToMinusWater);
 
         percentWater[id]--;
+        if (_autoWaterPlus && percentWater[id] < 50){
+            percentWater[id] = 100;
+            if (id == _selectedId)
+                _waterText.text = $"{percentWater[id]} / 100%";
+            _minusWater[id] = StartCoroutine(MinusWater(id));
+        }
+        else{
             if (percentWater[id] == 0){
                 if (id == _selectedId)
                     _waterText.text = $"0 / 100%";
@@ -85,6 +152,7 @@ public class WaterFarm : MonoBehaviour
                     _waterText.text = $"{percentWater[id]} / 100%";
                 _minusWater[id] = StartCoroutine(MinusWater(id));
             }
+        }
     }
 
     private IEnumerator OnlyFade(){

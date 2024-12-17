@@ -10,20 +10,33 @@ public class ProductFarm : MonoBehaviour
 
     [SerializeField] private WaterFarm _waterFarm;
 
+    [SerializeField] private TMP_Text _EPHText;
+    [SerializeField] private int _EPH;
+
     [SerializeField] private TMP_Text _productText;
     [SerializeField] private int _selectedId;
     public float[] timeToPlusProduct;
+    public float[] multipleTime;
     public int[] maxProduct;
     public int[] product;
-    public float[] multipleTime;
 
     private bool _isUpdated = false;
 
+    private bool _autoCollect;
+    public bool _isFirst = true;
+
     private Coroutine[] _plusProductCor;
-    private bool _isFirst = true;
 
     private void Start(){
-        if (_isFirst){
+        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
+        _autoCollect = PlayerPrefsX.GetBool("AutoCollect", false);
+        if (!_isFirst){
+            timeToPlusProduct = PlayerPrefsX.GetFloatArray("TimeToPlusProduct");
+            multipleTime = PlayerPrefsX.GetFloatArray("MultipleTime");
+            maxProduct = PlayerPrefsX.GetIntArray("MaxProduct");
+            product = PlayerPrefsX.GetIntArray("Product");
+        }
+        else{
             timeToPlusProduct[0] = 36000 / 1000 / multipleTime[0];
             for (int i = 1; i < timeToPlusProduct.Length; i++)
                 timeToPlusProduct[i] = timeToPlusProduct[0];
@@ -33,19 +46,55 @@ public class ProductFarm : MonoBehaviour
     }
 
     private void OnEnable(){
-        WaterFarm.UpdateFarm += PlusProductFarm;
         MethodsFarm.CollectProduct += CollectProduct;
+        MethodsFarm.CollectAll += CollectAll;
+        MethodsFarm.PlusSpeed += PlusSpeed;
+        WaterFarm.UpdateFarm += PlusProductFarm;
         SelectFarm.SetSelectedId += UpdateSelectedId;
         UpgradesFarm.UpgradeMaxProductFarm += UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent += UpdateNewBuy;
+        BuyFarm.BuyKultivator += AutoCollect;
+        WaterFarm.SendNeedTime += ColculateStartGame;
     }
 
     private void OnDisable(){
-        WaterFarm.UpdateFarm -= PlusProductFarm;
         MethodsFarm.CollectProduct -= CollectProduct;
+        MethodsFarm.CollectAll -= CollectAll;
+        MethodsFarm.PlusSpeed -= PlusSpeed;
+        WaterFarm.UpdateFarm -= PlusProductFarm;
         SelectFarm.SetSelectedId -= UpdateSelectedId;
         UpgradesFarm.UpgradeMaxProductFarm -= UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent -= UpdateNewBuy;
+        BuyFarm.BuyKultivator -= AutoCollect;
+        WaterFarm.SendNeedTime -= ColculateStartGame;
+    }
+
+    private void AutoCollect() => _autoCollect = true;
+
+    private void CollectAll(){
+        for (int i = 0; i < product.Length; i++)
+            CollectProduct(i);
+    }
+
+    private void PlusSpeed(){
+        for (int i = 0; i < multipleTime.Length; i++){
+            multipleTime[i] += 0.1f;
+            ColculateTimeToPlus(i);
+        }
+    }
+
+    private void ColculateStartGame(int id, float time, int percentWater){
+        int collectTimes = Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
+        if (product[id] + collectTimes < maxProduct[id])
+            product[id] += collectTimes;
+        else
+            product[id] = maxProduct[id];
+        if (percentWater > 0 && product[id] < maxProduct[id])
+            _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+        
+        if (product[id] > maxProduct[id] / 2 && _autoCollect)
+            CollectProduct(id);
+        UpdateSelectedId(id);
     }
 
     private void UpdateSelectedId(int id){
@@ -77,12 +126,19 @@ public class ProductFarm : MonoBehaviour
                 StopCoroutine(_plusProductCor[id]);
             _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
         }
-        else
-            StopCoroutine(_plusProductCor[id]);
+        else{
+            if (_plusProductCor[id] != null)
+                StopCoroutine(_plusProductCor[id]);
+        }
     }
 
     public void ColculateTimeToPlus(int id){
         timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
+        _EPH = 0;
+        for (int i = 0; i < timeToPlusProduct.Length; i++){
+            _EPH +=  Mathf.RoundToInt(Math.Abs(3600 / timeToPlusProduct[i]) * Market.InstanceMarket._costProduct[i]);
+        }
+        _EPHText.text = _EPH.ToString();
     }
 
     private void CollectProduct(int id){
@@ -93,20 +149,40 @@ public class ProductFarm : MonoBehaviour
         UpdateFarm?.Invoke(_selectedId);
     }
 
+    private void OnApplicationPause(bool pauseStatus) {
+        PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
+        PlayerPrefsX.SetIntArray("Product", product);
+        PlayerPrefsX.SetFloatArray("MultipleTime", multipleTime);
+        PlayerPrefsX.SetFloatArray("TimeToPlusProduct", timeToPlusProduct);
+        PlayerPrefsX.SetBool("AutoCollect", _autoCollect);
+    }
+    private void OnApplicationQuit() {
+        PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
+        PlayerPrefsX.SetIntArray("Product", product);
+        PlayerPrefsX.SetFloatArray("MultipleTime", multipleTime);
+        PlayerPrefsX.SetFloatArray("TimeToPlusProduct", timeToPlusProduct);
+        PlayerPrefsX.SetBool("AutoCollect", _autoCollect);
+    }
+
     private IEnumerator PlusProductFarmCor(int id){
         yield return new WaitForSeconds(timeToPlusProduct[id]);
         
         product[id]++;
+        if (_autoCollect && product[id] > maxProduct[id] / 2){
+            CollectProduct(id);
+        }
+        else{
+            if (product[id] < maxProduct[id]){
+                if (product[id] >= maxProduct[id] / 10 && !_isUpdated){
+                    UpdateFarm?.Invoke(_selectedId);
+                    _isUpdated = true;
+                }
+                _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+            }
+            else
+                UpdateFarm?.Invoke(_selectedId);
+        }
         if (id == _selectedId)
             _productText.text = $"{product[id]} / {maxProduct[id]}";
-        if (product[id] < maxProduct[id]){
-             _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
-            if (product[id] >= maxProduct[id] / 10 && !_isUpdated){
-                UpdateFarm?.Invoke(_selectedId);
-                _isUpdated = true;
-            }
-        }
-        else
-            UpdateFarm?.Invoke(_selectedId);
     }
 }

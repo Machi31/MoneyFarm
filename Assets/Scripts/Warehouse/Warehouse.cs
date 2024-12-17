@@ -23,12 +23,13 @@ public class Warehouse : MonoBehaviour
     private int _selectedId;
     
     private float _fadeDuaration = 0.5f;
-
-    private bool _isFirst = true;
+    public bool _isFirst = true;
 
     private void Start() {
+        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
         if (!_isFirst)
-            _countProduct = PlayerPrefsX.GetIntArray("CountPeoduct");
+            _countProduct = PlayerPrefsX.GetIntArray("CountProduct");
+
         else
             PlayerPrefsX.SetIntArray("CountPeoduct", _countProduct);
     }
@@ -80,6 +81,13 @@ public class Warehouse : MonoBehaviour
         SendToMarket?.Invoke(_selectedId, _countProduct[_selectedId]);
         _countProduct[_selectedId] = 0;
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+    }
+
+    private void OnApplicationPause(bool pauseStatus) {
+        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
+    }
+    private void OnApplicationQuit() {
+        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
     }
 
     private IEnumerator FadeOut()
