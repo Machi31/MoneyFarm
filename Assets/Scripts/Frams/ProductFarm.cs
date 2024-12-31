@@ -23,14 +23,12 @@ public class ProductFarm : MonoBehaviour
     private bool _isUpdated = false;
 
     private bool _autoCollect;
-    public bool _isFirst = true;
 
     private Coroutine[] _plusProductCor;
 
     private void Start(){
-        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
         _autoCollect = PlayerPrefsX.GetBool("AutoCollect", false);
-        if (!_isFirst){
+        if (!GameManager.Instance._isFirst){
             timeToPlusProduct = PlayerPrefsX.GetFloatArray("TimeToPlusProduct");
             multipleTime = PlayerPrefsX.GetFloatArray("MultipleTime");
             maxProduct = PlayerPrefsX.GetIntArray("MaxProduct");
@@ -43,6 +41,7 @@ public class ProductFarm : MonoBehaviour
         }
         _plusProductCor = new Coroutine[timeToPlusProduct.Length];
         _productText.text = $"{product[_selectedId]} / {maxProduct[_selectedId]}";
+        UpdateEPH();
     }
 
     private void OnEnable(){
@@ -118,6 +117,7 @@ public class ProductFarm : MonoBehaviour
                 _productText.text = "";
             }
         }
+        UpdateEPH();
     }
 
     private void PlusProductFarm(int id){
@@ -132,13 +132,16 @@ public class ProductFarm : MonoBehaviour
         }
     }
 
-    public void ColculateTimeToPlus(int id){
-        timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
+    private void UpdateEPH(){
         _EPH = 0;
         for (int i = 0; i < timeToPlusProduct.Length; i++){
             _EPH +=  Mathf.RoundToInt(Math.Abs(3600 / timeToPlusProduct[i]) * Market.InstanceMarket._costProduct[i]);
         }
         _EPHText.text = _EPH.ToString();
+    }
+
+    public void ColculateTimeToPlus(int id){
+        timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
     }
 
     private void CollectProduct(int id){
@@ -149,13 +152,6 @@ public class ProductFarm : MonoBehaviour
         UpdateFarm?.Invoke(_selectedId);
     }
 
-    private void OnApplicationPause(bool pauseStatus) {
-        PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
-        PlayerPrefsX.SetIntArray("Product", product);
-        PlayerPrefsX.SetFloatArray("MultipleTime", multipleTime);
-        PlayerPrefsX.SetFloatArray("TimeToPlusProduct", timeToPlusProduct);
-        PlayerPrefsX.SetBool("AutoCollect", _autoCollect);
-    }
     private void OnApplicationQuit() {
         PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
         PlayerPrefsX.SetIntArray("Product", product);

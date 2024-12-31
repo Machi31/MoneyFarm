@@ -18,17 +18,15 @@ public class WaterFarm : MonoBehaviour
     public int[] percentWater;
 
     private bool _autoWaterPlus;
-    public bool _isFirst = true;
 
     private Coroutine[] _minusWater;
     private Coroutine _onlyFadeCoroutine;
     private Coroutine _onlyOutCoroutine;
 
     private void Start(){
-        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
         _autoWaterPlus = PlayerPrefsX.GetBool("AutoWaterPlus", false);
         _minusWater = new Coroutine[percentWater.Length];
-        if (!_isFirst)
+        if (!GameManager.Instance._isFirst)
             percentWater = PlayerPrefsX.GetIntArray("PercentWater");
 
         float maxTime;
@@ -120,11 +118,6 @@ public class WaterFarm : MonoBehaviour
         UpdateFarm?.Invoke(id);
     }
 
-    private void OnApplicationPause(bool pauseStatus) {
-        StopAllCoroutines();
-        PlayerPrefsX.SetIntArray("PercentWater", percentWater);
-        PlayerPrefsX.SetBool("AutoWaterPlus", _autoWaterPlus);
-    }
     private void OnApplicationQuit() {
         StopAllCoroutines();
         PlayerPrefsX.SetIntArray("PercentWater", percentWater);

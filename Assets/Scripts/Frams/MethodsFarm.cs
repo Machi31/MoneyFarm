@@ -28,7 +28,7 @@ public class MethodsFarm : MonoBehaviour
     [SerializeField] private Image _bgFarms;
     [SerializeField] private Image _bgProfile;
 
-    [SerializeField] private Button[] _profileButton;
+    // [SerializeField] private Button[] _profileButton;
     [SerializeField] private Button _fullWaterButton;
     [SerializeField] private Button _collectAllButton;
     [SerializeField] private Button _plusSpeedButton;
@@ -98,10 +98,10 @@ public class MethodsFarm : MonoBehaviour
         _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenWarehouse?.Invoke();
-        for (int i = 0; i < _profileButton.Length; i++){
-            _profileButton[i].gameObject.SetActive(false);
-            _profileButton[i].interactable = false;
-        }
+        // for (int i = 0; i < _profileButton.Length; i++){
+        //     _profileButton[i].gameObject.SetActive(false);
+        //     _profileButton[i].interactable = false;
+        // }
     }
 
     public void OpenMarketMethod(){
@@ -109,10 +109,10 @@ public class MethodsFarm : MonoBehaviour
         _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenMarket?.Invoke();
-        for (int i = 0; i < _profileButton.Length; i++){
-            _profileButton[i].gameObject.SetActive(false);
-            _profileButton[i].interactable = false;
-        }
+        // for (int i = 0; i < _profileButton.Length; i++){
+        //     _profileButton[i].gameObject.SetActive(false);
+        //     _profileButton[i].interactable = false;
+        // }
     }
 
     public void OpenFarm(){
@@ -160,10 +160,10 @@ public class MethodsFarm : MonoBehaviour
 
             bgProfileColor.a = Mathf.Lerp(bgProfileStartAlpha, 0f, t);
             _bgProfile.color = bgProfileColor;
-            for (int i = 0; i < _profileButton.Length; i++){
-                _profileButton[i].gameObject.SetActive(false);
-                _profileButton[i].interactable = false;
-            }
+            // for (int i = 0; i < _profileButton.Length; i++){
+            //     _profileButton[i].gameObject.SetActive(false);
+            //     _profileButton[i].interactable = false;
+            // }
 
             yield return null;
         }

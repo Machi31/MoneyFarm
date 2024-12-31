@@ -23,11 +23,9 @@ public class Warehouse : MonoBehaviour
     private int _selectedId;
     
     private float _fadeDuaration = 0.5f;
-    public bool _isFirst = true;
 
     private void Start() {
-        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
-        if (!_isFirst)
+        if (!GameManager.Instance._isFirst)
             _countProduct = PlayerPrefsX.GetIntArray("CountProduct");
 
         else
@@ -83,9 +81,6 @@ public class Warehouse : MonoBehaviour
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
     }
 
-    private void OnApplicationPause(bool pauseStatus) {
-        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
-    }
     private void OnApplicationQuit() {
         PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
     }

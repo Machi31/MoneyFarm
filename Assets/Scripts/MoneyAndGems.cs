@@ -14,11 +14,9 @@ public class MoneyAndGems : MonoBehaviour
     public int totalMoney;
     public int money;
     public int gems;
-    public bool _isFirst = true;
 
     private void Start() {
-        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
-        if (!_isFirst){
+        if (!GameManager.Instance._isFirst){
             totalMoney = PlayerPrefs.GetInt("TotalMoney");
             money = PlayerPrefs.GetInt("Money");
             gems = PlayerPrefs.GetInt("Gems");
@@ -64,11 +62,6 @@ public class MoneyAndGems : MonoBehaviour
         UpdateText();
     }
 
-    private void OnApplicationPause(bool pauseStatus) {
-        PlayerPrefs.SetInt("TotalMoney", totalMoney);
-        PlayerPrefs.SetInt("Money", money);
-        PlayerPrefs.SetInt("Gems", gems);
-    }
     private void OnApplicationQuit() {
         PlayerPrefs.SetInt("TotalMoney", totalMoney);
         PlayerPrefs.SetInt("Money", money);

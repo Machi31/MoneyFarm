@@ -13,7 +13,7 @@ public class Profile : MonoBehaviour
     [SerializeField] private Image _bgProfile;
     [SerializeField] private Image _bgAboutProfile;
 
-    [SerializeField] private Button[] _profileButton;
+    // [SerializeField] private Button[] _profileButton;
 
     private float _fadeDuaration = 0.5f;
 
@@ -61,10 +61,10 @@ public class Profile : MonoBehaviour
 
                 bgProfileColor.a = Mathf.Lerp(bgProfileStartAlpha, 1f, t);
                 _bgProfile.color = bgProfileColor;
-                for (int i = 0; i < _profileButton.Length; i++){
-                    _profileButton[i].gameObject.SetActive(true);
-                    _profileButton[i].interactable = true;
-                }
+                // for (int i = 0; i < _profileButton.Length; i++){
+                //     _profileButton[i].gameObject.SetActive(true);
+                //     _profileButton[i].interactable = true;
+                // }
 
                 yield return null;
             }
@@ -85,10 +85,10 @@ public class Profile : MonoBehaviour
 
                 bgProfileColor.a = Mathf.Lerp(bgProfileStartAlpha, 0f, t);
                 _bgProfile.color = bgProfileColor;
-                for (int i = 0; i < _profileButton.Length; i++){
-                    _profileButton[i].gameObject.SetActive(false);
-                    _profileButton[i].interactable = false;
-                }
+                // for (int i = 0; i < _profileButton.Length; i++){
+                //     _profileButton[i].gameObject.SetActive(false);
+                //     _profileButton[i].interactable = false;
+                // }
 
                 yield return null;
             }

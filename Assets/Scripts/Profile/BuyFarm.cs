@@ -30,13 +30,11 @@ public class BuyFarm : MonoBehaviour
     [SerializeField] private GameObject[] _false;
     private bool _autoCollect;
     private bool _autoPlusWater;
-    public bool _isFirst = true;
 
     private void Start(){
-        _isFirst = PlayerPrefsX.GetBool("IsFirst", true);
         _autoCollect = PlayerPrefsX.GetBool("AutoCollect", false);
         _autoPlusWater = PlayerPrefsX.GetBool("AutoWaterPlus", false);
-        if (!_isFirst)
+        if (!GameManager.Instance._isFirst)
             _lvlFarm = PlayerPrefsX.GetIntArray("LvlFarm");
 
         for (int i = 0; i < _lvlFarmText.Length; i++)
@@ -207,9 +205,6 @@ public class BuyFarm : MonoBehaviour
         }
     }
 
-    private void OnApplicationPause() {
-        PlayerPrefsX.SetIntArray("LvlFarm", _lvlFarm);
-    }
     private void OnApplicationQuit() {
         PlayerPrefsX.SetIntArray("LvlFarm", _lvlFarm);
     }

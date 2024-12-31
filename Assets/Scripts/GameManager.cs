@@ -35,14 +35,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame() => SceneManager.LoadScene(1);
 
-    private void OnApplicationPause(bool pauseStatus)
-    {
-        _isFirst = false;
-        DateTime exitTime = DateTime.Now;
-        string exitTimeString = exitTime.ToString();
-        PlayerPrefs.SetString("ExitTime", exitTimeString);
-        PlayerPrefsX.SetBool("IsFirst", _isFirst);
-    }
+
     private void OnApplicationQuit()
     {
         _isFirst = false;
