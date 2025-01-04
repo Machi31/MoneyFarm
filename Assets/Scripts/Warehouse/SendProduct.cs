@@ -12,7 +12,6 @@ public class SendProduct : MonoBehaviour
     [SerializeField] private Sprite[] _productsImages;
 
     [SerializeField] private TMP_Text _costText;
-    [SerializeField] private TMP_Text _countText;
 
     private void OnEnable(){
         Warehouse.SendId += NeedBox;
@@ -32,7 +31,6 @@ public class SendProduct : MonoBehaviour
             _gem.SetActive(true);
         }
         _productImage.sprite = _productsImages[id];
-        _costText.text = $"{count * Market.InstanceMarket._costProduct[id]}";
-        _countText.text = $"{count}";
+        _costText.text = $"Цена {Market.InstanceMarket._costProduct[id]}";
     }
 }

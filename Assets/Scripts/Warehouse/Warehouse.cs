@@ -18,11 +18,18 @@ public class Warehouse : MonoBehaviour
     [SerializeField] private Image _bgProfile;
 
     [SerializeField] private int[] _countProduct;
-    [SerializeField] private TMP_Text[] _countText;
+    [SerializeField] private TMP_Text[] _costText;
+    [SerializeField] private TMP_Text _countText;
+    [SerializeField] private TMP_Text _costSendText;
+
+    [SerializeField] private Scrollbar _scrollbar;
+    private int _sendProduct;
 
     private int _selectedId;
     
     private float _fadeDuaration = 0.5f;
+
+    private bool _isOpened = false;
 
     private void Start() {
         if (!GameManager.Instance._isFirst)
@@ -30,6 +37,13 @@ public class Warehouse : MonoBehaviour
 
         else
             PlayerPrefsX.SetIntArray("CountPeoduct", _countProduct);
+    }
+
+    private void Update() {
+        if (_isOpened){
+            _sendProduct = (int)Math.Floor(_scrollbar.value * _countProduct[_selectedId]);
+            _costSendText.text = $"{_sendProduct * Market.InstanceMarket._costProduct[_selectedId]}";
+        }
     }
 
     private void OnEnable(){
@@ -47,7 +61,7 @@ public class Warehouse : MonoBehaviour
     private void OpenWarehouse(){
         StartCoroutine(FadeOut());
         for (int i = 0; i < _countProduct.Length; i++)
-            _countText[i].text = $"{_countProduct[i]}";
+            _costText[i].text = $"{Market.InstanceMarket._costProduct[i]}";
         _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _warehouseWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
     }
@@ -60,11 +74,14 @@ public class Warehouse : MonoBehaviour
 
     public void CloseSendWarehouse(){
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _isOpened = false;
     }
 
     public void SelectId(int id){
+        _isOpened = true;
         _selectedId = id;
         SendId?.Invoke(_selectedId, _countProduct[_selectedId]);
+        _countText.text = $"{_countProduct[id]}";
         _sendProductWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
     }
 
@@ -76,9 +93,12 @@ public class Warehouse : MonoBehaviour
     }
 
     private void SendProduct(){
-        SendToMarket?.Invoke(_selectedId, _countProduct[_selectedId]);
-        _countProduct[_selectedId] = 0;
+        SendToMarket?.Invoke(_selectedId, _sendProduct);
+        _countProduct[_selectedId] -= _sendProduct;
+        _countText.text = $"{_countProduct[_selectedId]}";
+        _scrollbar.value = 0;
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _isOpened = false;
     }
 
     private void OnApplicationQuit() {
