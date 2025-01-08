@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,8 +10,6 @@ using UnityEngine.UI;
 
 public class Market : MonoBehaviour
 {
-    public static event Action<int, int, int> SendProductToBox;
-
     public static Market InstanceMarket { get; private set; }
 
     [SerializeField] private Transform[] _positions; 
@@ -27,19 +26,48 @@ public class Market : MonoBehaviour
     [SerializeField] private Image _bgFarms;
     [SerializeField] private Image _bgProfile;
 
+    [SerializeField] private TMP_Text[] _countText;
     [SerializeField] private int[] _countProduct;
     public int[] _costProduct;
+
+    [SerializeField] private TMP_Text[] _countMoneyText;
+    [SerializeField] private int[] _countMoney; 
 
     [SerializeField] private int _idNeedSell;
     [SerializeField] private int _needSell;
 
+    private Coroutine[] _addCountMoneyIenumerator;
+
     private float _fadeDuaration = 0.5f;
 
     private void Start() {
+        _addCountMoneyIenumerator = new Coroutine[_countMoney.Length];
         if (!GameManager.Instance._isFirst){
             _costProduct = PlayerPrefsX.GetIntArray("CostProduct");
             _countProduct = PlayerPrefsX.GetIntArray("CountProductMarket");
+            _countMoney = PlayerPrefsX.GetIntArray("CountMoneyMarket");
         }
+
+        int timesToAddMoney = GameManager.Instance._secondsFromExit / 5;
+        for (int i = 0; i < _countProduct.Length; i++){
+            if (_countProduct[i] > 0){
+                if (timesToAddMoney > _countProduct[i]){
+                    _countProduct[i] = 0;
+                    MoneyAndGems.InstanceMG.PlusMoney(_costProduct[i] * _countProduct[i]);
+                }
+                else{
+                    int countProduct = _countProduct[i] - timesToAddMoney;
+                    _countProduct[i] -= countProduct;
+                    if (_countProduct[i] > 0){
+                        if (_addCountMoneyIenumerator[i] == null)
+                            _addCountMoneyIenumerator[i] = StartCoroutine(AddCountMoney(i));
+                    }
+                    MoneyAndGems.InstanceMG.PlusMoney(_costProduct[i] * countProduct);
+                }
+            }
+        }
+
+        PlayerPrefsX.SetIntArray("CountProductMarket", _costProduct);
     }
 
     private void Awake() {
@@ -85,13 +113,11 @@ public class Market : MonoBehaviour
     private void OnEnable(){
         MethodsFarm.OpenMarket += OpenMarket;
         Warehouse.SendToMarket += PlusProduct;
-        ButtonMarket.GiveFromMarket += NeedToSell;
     }
 
     private void OnDisable(){
         MethodsFarm.OpenMarket -= OpenMarket;
         Warehouse.SendToMarket -= PlusProduct;
-        ButtonMarket.GiveFromMarket -= NeedToSell;
     }
 
     private void OpenMarket(){
@@ -102,7 +128,20 @@ public class Market : MonoBehaviour
     }
 
     private void UpdateShelf(){
-        
+        for (int i = 0; i < _countProduct.Length; i++){
+            if (_countProduct[i] <= 0){
+                _countText[i].gameObject.SetActive(false);
+                if (_addCountMoneyIenumerator[i] != null)
+                    StopCoroutine(_addCountMoneyIenumerator[i]);
+            }
+            else{
+                _countText[i].gameObject.SetActive(true);
+                _countText[i].text = $"{_countProduct[i]}";
+                if (_addCountMoneyIenumerator[i] == null)
+                    _addCountMoneyIenumerator[i] = StartCoroutine(AddCountMoney(i));
+            }
+            _countMoneyText[i].text = $"{_countMoney[i]}";
+        }
     }
 
     public void CloseMarket(){
@@ -113,27 +152,28 @@ public class Market : MonoBehaviour
 
     private void PlusProduct(int id, int count){
         _countProduct[id] += count;
-    }
-    public void MinusProduct(){
-        _countProduct[_idNeedSell] -= _needSell;
-        if (_idNeedSell < 6)
-            MoneyAndGems.InstanceMG.PlusMoney(_needSell * _costProduct[_idNeedSell]);
-        else
-            MoneyAndGems.InstanceMG.PlusGem(_needSell * _costProduct[_idNeedSell]);
-        _sellProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         UpdateShelf();
     }
 
-    private void NeedToSell(int id, int count){
-        _idNeedSell = id;
-        _needSell = count;
-    } 
-
-    public void BreakSell() => _sellProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+    public void CollectMoney(int id){
+        MoneyAndGems.InstanceMG.PlusMoney(_countMoney[id]);
+        _countMoney[id] = 0;
+        UpdateShelf();
+    }
 
     private void OnApplicationQuit() {
         PlayerPrefsX.SetIntArray("CostProduct", _costProduct);
         PlayerPrefsX.SetIntArray("CountProductMarket", _countProduct);
+        PlayerPrefsX.SetIntArray("CountMoneyMarket", _countMoney);
+    }
+
+    private IEnumerator AddCountMoney(int id){
+        while(true){
+            yield return new WaitForSeconds(5);
+            _countProduct[id] --;
+            _countMoney[id] += _costProduct[id];
+            UpdateShelf();
+        }
     }
 
     private IEnumerator FadeOut()
