@@ -5,6 +5,8 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
 
+//! ПЕРЕДЕЛАТЬ ЛОГИКУ ПРОДАЖИ ТОВАРА
+
 public class Market : MonoBehaviour
 {
     public static event Action<int, int, int> SendProductToBox;
@@ -28,10 +30,6 @@ public class Market : MonoBehaviour
     [SerializeField] private int[] _countProduct;
     public int[] _costProduct;
 
-    [SerializeField] private Button[] _sellButton;
-    [SerializeField] private Image[] _imageButtonProduct;
-    [SerializeField] private Sprite[] _spriteButton;
-
     [SerializeField] private int _idNeedSell;
     [SerializeField] private int _needSell;
 
@@ -40,7 +38,7 @@ public class Market : MonoBehaviour
     private void Start() {
         if (!GameManager.Instance._isFirst){
             _costProduct = PlayerPrefsX.GetIntArray("CostProduct");
-            _countProduct = PlayerPrefsX.GetIntArray("CountProduct");
+            _countProduct = PlayerPrefsX.GetIntArray("CountProductMarket");
         }
     }
 
@@ -104,63 +102,13 @@ public class Market : MonoBehaviour
     }
 
     private void UpdateShelf(){
-        int idBox = 0;
-        for (int i = 0; i < _sellButton.Length; i++){
-            SendProductToBox?.Invoke(i, 0, 0);
-            _sellButton[i].interactable = false;
-        }
-        for (int i = 0; i < _sellButton.Length; i++){
-            _sellButton[i].gameObject.SetActive(true);
-            _sellButton[idBox].interactable = false;
-        }
-        for (int i = 0; i < _countProduct.Length; i++){
-            if (_countProduct[i] == 0){
-                Debug.Log($"Продукция {i} отсутствует!");
-            }
-            else if (_countProduct[i] >= 1){
-                int countProduct = _countProduct[i];
-                while (countProduct > 0){
-                    if (idBox < _sellButton.Length){
-                        if (idBox <= 5)
-                            _imageButtonProduct[idBox].sprite = _spriteButton[i];
-                        else if (idBox <= 11)
-                            _imageButtonProduct[idBox].sprite = _spriteButton[i + 7];
-                        else
-                            _imageButtonProduct[idBox].sprite = _spriteButton[i + 14];
-                        
-                        if (countProduct >= 5000){
-                            SendProductToBox?.Invoke(idBox, i, 5000);
-                            countProduct -= 5000;
-                        }
-                        else{
-                            SendProductToBox?.Invoke(idBox, i, countProduct);
-                            countProduct -= countProduct;
-                        }
-
-                        _sellButton[idBox].interactable = true;
-                        idBox++;
-                    }
-                    else{
-                        Debug.Log("Максимум ящиков уже расположено!");
-                        return;
-                    }
-                }
-            }
-        }
-        for (int i = 0; i < _sellButton.Length; i++){
-            if (_sellButton[i].interactable == false)
-                _sellButton[i].gameObject.SetActive(false);
-        }
+        
     }
 
     public void CloseMarket(){
         StartCoroutine(FadeOut());
         _farmWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
-        for (int i = 0; i < _sellButton.Length; i++){
-            _sellButton[i].gameObject.SetActive(true);
-            _sellButton[i].interactable = false;
-        }
     }
 
     private void PlusProduct(int id, int count){
@@ -185,7 +133,7 @@ public class Market : MonoBehaviour
 
     private void OnApplicationQuit() {
         PlayerPrefsX.SetIntArray("CostProduct", _costProduct);
-        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
+        PlayerPrefsX.SetIntArray("CountProductMarket", _countProduct);
     }
 
     private IEnumerator FadeOut()

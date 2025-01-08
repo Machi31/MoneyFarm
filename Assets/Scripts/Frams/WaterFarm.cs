@@ -32,9 +32,10 @@ public class WaterFarm : MonoBehaviour
         float maxTime;
         for (int i = 0; i < percentWater.Length; i++){
             maxTime = percentWater[i] * _timeToMinusWater;
-            if (maxTime > GameManager.Instance._secondsFromExit){
+            if (maxTime > GameManager.Instance._secondsFromExit)
                 maxTime -= GameManager.Instance._secondsFromExit;
-            }
+            else
+                maxTime = 0f;
             int prePercent = percentWater[i];
             percentWater[i] -= Mathf.RoundToInt(prePercent - Math.Abs(maxTime / _timeToMinusWater));
             if (percentWater[i] < 0)

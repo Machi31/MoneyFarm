@@ -33,10 +33,10 @@ public class Warehouse : MonoBehaviour
 
     private void Start() {
         if (!GameManager.Instance._isFirst)
-            _countProduct = PlayerPrefsX.GetIntArray("CountProduct");
+            _countProduct = PlayerPrefsX.GetIntArray("CountProductWarehouse");
 
         else
-            PlayerPrefsX.SetIntArray("CountPeoduct", _countProduct);
+            PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
     }
 
     private void Update() {
@@ -88,7 +88,7 @@ public class Warehouse : MonoBehaviour
     private void CollectProduct(int id, int count){
         if (id < 6){
             _countProduct[id] += count;
-            PlayerPrefsX.SetIntArray("CountPeoduct", _countProduct);
+            PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
         }
     }
 
@@ -102,7 +102,7 @@ public class Warehouse : MonoBehaviour
     }
 
     private void OnApplicationQuit() {
-        PlayerPrefsX.SetIntArray("CountProduct", _countProduct);
+        PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
     }
 
     private IEnumerator FadeOut()
