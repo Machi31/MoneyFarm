@@ -47,8 +47,7 @@ public class GemMarket : MonoBehaviour
         GP_Ads.ShowRewarded("GemReward");
     }
 
-    private void OnRewarded(string arg0)
-    {
+    private void OnRewarded(string arg0){
         if (arg0 == "GemReward")
             MoneyAndGems.InstanceMG.PlusGem(10);
     }

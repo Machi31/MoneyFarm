@@ -43,8 +43,7 @@ public class GameManager : MonoBehaviour
             StartCoroutine(SaveDataCor());
     }
 
-    private void SaveData()
-    {
+    private void SaveData() {
         _isFirst = false;
         PlayerPrefsX.SetBool("IsFirst", _isFirst);
     }
@@ -55,9 +54,11 @@ public class GameManager : MonoBehaviour
     }
 
     private IEnumerator SaveTime(){
-        yield return new WaitForSeconds(1);
-        DateTime exitTime = DateTime.Now;
-        string exitTimeString = exitTime.ToString();
-        PlayerPrefs.SetString("ExitTime", exitTimeString);
+        while (true){
+            yield return new WaitForSeconds(1);
+            DateTime exitTime = DateTime.Now;
+            string exitTimeString = exitTime.ToString();
+            PlayerPrefs.SetString("ExitTime", exitTimeString);
+        }
     }
 }

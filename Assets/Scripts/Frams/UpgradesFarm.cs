@@ -11,8 +11,7 @@ public class UpgradesFarm : MonoBehaviour
     [SerializeField] private ProductFarm _productFarm;
     [SerializeField] private BuyFarm _buyFarm;
 
-    [SerializeField] private Button _fullWaterButton;
-    [SerializeField] private Button _collectAllButton;
+    [SerializeField] private Button _upgradeFullButton;
 
     private int _selectedId;
 
@@ -28,13 +27,11 @@ public class UpgradesFarm : MonoBehaviour
 
     private void Update(){
         if (_selectedId < 7 && _buyFarm._lvlFarm[_selectedId] > 0){
-            if (MoneyAndGems.InstanceMG.money < 150){
-                _fullWaterButton.interactable = false;
-                _collectAllButton.interactable = false;
+            if (MoneyAndGems.InstanceMG.money < 10){
+                _upgradeFullButton.interactable = false;
             }
             else {
-                _fullWaterButton.interactable = true;
-                _collectAllButton.interactable = true;
+                _upgradeFullButton.interactable = true;
             }
         }
     }

@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ProductFarm : MonoBehaviour
 {
@@ -20,19 +21,36 @@ public class ProductFarm : MonoBehaviour
     public int[] maxProduct;
     public int[] product;
 
+    private int _secondsFromExit;
+    private int _timeBonus = 10800;
+    private int _nowTimeBonus;
+
     private bool _isUpdated = false;
 
     private bool _autoCollect;
 
     private Coroutine[] _plusProductCor;
 
+    [SerializeField] private Button _upgradeSpeedButton;
+
     private void Start(){
         _autoCollect = PlayerPrefsX.GetBool("AutoCollect", false);
         if (!GameManager.Instance._isFirst){
+            _nowTimeBonus = PlayerPrefs.GetInt("NowTimeBonus");
             timeToPlusProduct = PlayerPrefsX.GetFloatArray("TimeToPlusProduct");
             multipleTime = PlayerPrefsX.GetFloatArray("MultipleTime");
             maxProduct = PlayerPrefsX.GetIntArray("MaxProduct");
             product = PlayerPrefsX.GetIntArray("Product");
+
+            string exitTimeString = PlayerPrefs.GetString("ExitTime");
+            DateTime exitTime = DateTime.Parse(exitTimeString);
+            TimeSpan timeSinceExit = DateTime.Now - exitTime;
+            _secondsFromExit = (int)timeSinceExit.TotalSeconds;
+            if (_secondsFromExit < _nowTimeBonus){
+                _nowTimeBonus -= _secondsFromExit;
+            }
+            else
+                _nowTimeBonus = 0;
         }
         else{
             timeToPlusProduct[0] = 36000 / 1000 / multipleTime[0];
@@ -44,28 +62,56 @@ public class ProductFarm : MonoBehaviour
         UpdateEPH();
     }
 
+    private void Update() {
+        if (_nowTimeBonus > 0){
+            _upgradeSpeedButton.interactable = false;
+        }
+        else {
+            _upgradeSpeedButton.interactable = true;
+        }
+    }
+
     private void OnEnable(){
         MethodsFarm.CollectProduct += CollectProduct;
         MethodsFarm.CollectAll += CollectAll;
         MethodsFarm.PlusSpeed += PlusSpeed;
+        MethodsFarm.PlusMaxSpeed += PlusSpeedMethod;
+        MethodsFarm.UpgradeMaxProductBonus += PlusMaxCountBonus;
         WaterFarm.UpdateFarm += PlusProductFarm;
+        WaterFarm.SendNeedTime += ColculateStartGame;
         SelectFarm.SetSelectedId += UpdateSelectedId;
         UpgradesFarm.UpgradeMaxProductFarm += UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent += UpdateNewBuy;
         BuyFarm.BuyKultivator += AutoCollect;
-        WaterFarm.SendNeedTime += ColculateStartGame;
     }
 
     private void OnDisable(){
         MethodsFarm.CollectProduct -= CollectProduct;
         MethodsFarm.CollectAll -= CollectAll;
         MethodsFarm.PlusSpeed -= PlusSpeed;
+        MethodsFarm.PlusMaxSpeed -= PlusSpeedMethod;
+        MethodsFarm.UpgradeMaxProductBonus -= PlusMaxCountBonus;
         WaterFarm.UpdateFarm -= PlusProductFarm;
+        WaterFarm.SendNeedTime -= ColculateStartGame;
         SelectFarm.SetSelectedId -= UpdateSelectedId;
         UpgradesFarm.UpgradeMaxProductFarm -= UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent -= UpdateNewBuy;
         BuyFarm.BuyKultivator -= AutoCollect;
-        WaterFarm.SendNeedTime -= ColculateStartGame;
+    }
+
+    private void PlusMaxCountBonus(int id){
+        maxProduct[id] += 100;
+        _productText.text = $"{product[_selectedId]} / {maxProduct[_selectedId]}";
+        SaveData();
+    } 
+
+    private void PlusSpeedMethod(){
+        StopAllCoroutines();
+        _nowTimeBonus = _timeBonus;
+        for (int i = 0; i < timeToPlusProduct.Length; i++){
+            ColculateTimeToPlus(i);
+            PlusProductFarm(i);   
+        }
     }
 
     private void AutoCollect() {
@@ -146,7 +192,10 @@ public class ProductFarm : MonoBehaviour
     }
 
     public void ColculateTimeToPlus(int id){
-        timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
+        if (_nowTimeBonus > 0)
+            timeToPlusProduct[id] = 36000 / 2 / 1000 / multipleTime[id];
+        else
+            timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
         SaveData();
     }
 
@@ -160,6 +209,7 @@ public class ProductFarm : MonoBehaviour
     }
 
     private void SaveData() {
+        PlayerPrefs.SetInt("NowTimeBonus", _nowTimeBonus);
         PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
         PlayerPrefsX.SetIntArray("Product", product);
         PlayerPrefsX.SetFloatArray("MultipleTime", multipleTime);
@@ -180,7 +230,15 @@ public class ProductFarm : MonoBehaviour
                     UpdateFarm?.Invoke(_selectedId);
                     _isUpdated = true;
                 }
-                _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+
+                _nowTimeBonus--;
+                if (_nowTimeBonus > 0 && _waterFarm.percentWater[id] > 0){
+                    _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+                }
+                else if (_waterFarm.percentWater[id] > 0){
+                    ColculateTimeToPlus(id);
+                    _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+                }
             }
             else
                 UpdateFarm?.Invoke(_selectedId);

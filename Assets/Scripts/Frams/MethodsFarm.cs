@@ -3,12 +3,14 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
+using GamePush;
 
 public class MethodsFarm : MonoBehaviour
 {
     public static event Action<int> AddWater;
     public static event Action<int> CollectProduct;
     public static event Action<int> UpgradeMaxProduct;
+    public static event Action<int> UpgradeMaxProductBonus;
     public static event Action OpenProfile;
     public static event Action OpenWarehouse;
     public static event Action OpenMarket;
@@ -17,6 +19,7 @@ public class MethodsFarm : MonoBehaviour
     public static event Action WaterFull;
     public static event Action PlusSpeed;
     public static event Action SlowWater;
+    public static event Action PlusMaxSpeed;
 
     [SerializeField] private int _selectedId;
 
@@ -25,6 +28,8 @@ public class MethodsFarm : MonoBehaviour
     [SerializeField] private GameObject _warehouseWindow;
     [SerializeField] private GameObject _marketWindow;
     [SerializeField] private GameObject _gemMarketWindow;
+    [SerializeField] private GameObject _upgradeMaxCountWindow;
+    [SerializeField] private GameObject _upgradeSpeedWindow;
 
     [SerializeField] private Image _bgFarms;
     [SerializeField] private Image _bgProfile;
@@ -34,15 +39,18 @@ public class MethodsFarm : MonoBehaviour
     [SerializeField] private Button _collectAllButton;
     [SerializeField] private Button _plusSpeedButton;
     [SerializeField] private Button _slowWaterButton;
+    [SerializeField] private Button _upgradeMaxCountButton;
 
     private float _fadeDuaration = 0.5f;
 
     private void OnEnable(){
         SelectFarm.SetSelectedId += UpdateSelectedId;
+        GP_Ads.OnRewardedReward += OnRewarded;
     }
 
     private void OnDisable(){
         SelectFarm.SetSelectedId -= UpdateSelectedId;
+        GP_Ads.OnRewardedReward -= OnRewarded;
     }
 
     private void Update() {
@@ -58,10 +66,12 @@ public class MethodsFarm : MonoBehaviour
         if (MoneyAndGems.InstanceMG.gems < 10){
             _plusSpeedButton.interactable = false;
             _slowWaterButton.interactable = false;
+            _upgradeMaxCountButton.interactable = false;
         }
         else {
             _plusSpeedButton.interactable = true;
             _slowWaterButton.interactable = true;
+            _upgradeMaxCountButton.interactable = true;
         }
     }
 
@@ -77,13 +87,46 @@ public class MethodsFarm : MonoBehaviour
             CollectProduct?.Invoke(_selectedId);
     }
 
-    public void UpgradeMaxProductFarm(){
+    public void UpgradeMaxCount(){
         if (_selectedId < 7)
             UpgradeMaxProduct?.Invoke(_selectedId);
     }
 
+    public void UpgradeMaxCountBonus(){
+        MoneyAndGems.InstanceMG.MinusGem(10);
+        if (_selectedId < 7)
+            UpgradeMaxProductBonus?.Invoke(_selectedId);
+        OpenFarm();
+    }
+
+    public void UpgradeSpeed(){
+        GP_Ads.ShowRewarded("SpeedReward");
+    }
+
+    private void OnRewarded(string arg0){
+        if (arg0 == "SpeedReward")
+            PlusMaxSpeed?.Invoke();
+        OpenFarm();
+    }
+
+    public void UpgradeMaxCountFarm(){
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, 1, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+    }
+
     public void UpgradeSpeedProductFarm(){
-        
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, 1, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
     }
 
     public void OpenProfileMethod(){
@@ -136,6 +179,8 @@ public class MethodsFarm : MonoBehaviour
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         StartCoroutine(FadeOut());
     }
 

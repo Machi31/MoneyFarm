@@ -66,7 +66,7 @@ public class BuyFarm : MonoBehaviour
         MethodsProfile.BuyFarm -= ShowBuyFarmPanel;    
     }
 
-    private void ShowBuyFarmPanel(int id){
+    public void ShowBuyFarmPanel(int id){
         _selectedId = id;
         if (id < 6 || id == 6 && _lvlFarm[id] > 0){
             _buyFarmPanel.transform.DOMove(new Vector3(0, 0, 0), 0.5f);
