@@ -18,13 +18,11 @@ public class UpgradesFarm : MonoBehaviour
 
     private void OnEnable(){
         MethodsFarm.UpgradeMaxProduct += UpgradeMaxProduct;
-        MethodsFarm.UpgradeSpeedProduct += UpgradeSpeedProductFarm;
         SelectFarm.SetSelectedId += UpdateSelectedId;
     }
 
     private void OnDisable(){
         MethodsFarm.UpgradeMaxProduct -= UpgradeMaxProduct;
-        MethodsFarm.UpgradeSpeedProduct -= UpgradeSpeedProductFarm;
         SelectFarm.SetSelectedId -= UpdateSelectedId;
     }
 
@@ -48,12 +46,5 @@ public class UpgradesFarm : MonoBehaviour
         _productFarm.maxProduct[id] += 50;
         UpgradeMaxProductFarm?.Invoke(id);
         MoneyAndGems.InstanceMG.MinusMoney(50);
-    }
-
-    private void UpgradeSpeedProductFarm(int id){
-        MoneyAndGems.InstanceMG.money -= 150;
-        _productFarm.multipleTime[id] += 0.1f;
-        _productFarm.ColculateTimeToPlus(id);
-        MoneyAndGems.InstanceMG.MinusMoney(500);
     }
 }

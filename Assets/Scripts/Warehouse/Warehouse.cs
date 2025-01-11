@@ -89,6 +89,7 @@ public class Warehouse : MonoBehaviour
         if (id < 6){
             _countProduct[id] += count;
             PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
+            SaveData();
         }
     }
 
@@ -99,9 +100,10 @@ public class Warehouse : MonoBehaviour
         _scrollbar.value = 0;
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _isOpened = false;
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
+    private void SaveData() {
         PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
     }
 

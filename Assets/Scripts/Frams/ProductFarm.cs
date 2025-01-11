@@ -68,11 +68,15 @@ public class ProductFarm : MonoBehaviour
         WaterFarm.SendNeedTime -= ColculateStartGame;
     }
 
-    private void AutoCollect() => _autoCollect = true;
+    private void AutoCollect() {
+        _autoCollect = true;
+        SaveData();
+    }
 
     private void CollectAll(){
         for (int i = 0; i < product.Length; i++)
             CollectProduct(i);
+        SaveData();
     }
 
     private void PlusSpeed(){
@@ -80,6 +84,7 @@ public class ProductFarm : MonoBehaviour
             multipleTime[i] += 0.1f;
             ColculateTimeToPlus(i);
         }
+        SaveData();
     }
 
     private void ColculateStartGame(int id, float time, int percentWater){
@@ -142,6 +147,7 @@ public class ProductFarm : MonoBehaviour
 
     public void ColculateTimeToPlus(int id){
         timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
+        SaveData();
     }
 
     private void CollectProduct(int id){
@@ -150,9 +156,10 @@ public class ProductFarm : MonoBehaviour
         _productText.text = $"{product[id]} / {maxProduct[id]}";
         _isUpdated = false;
         UpdateFarm?.Invoke(_selectedId);
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
+    private void SaveData() {
         PlayerPrefsX.SetIntArray("MaxProduct", maxProduct);
         PlayerPrefsX.SetIntArray("Product", product);
         PlayerPrefsX.SetFloatArray("MultipleTime", multipleTime);
@@ -180,5 +187,6 @@ public class ProductFarm : MonoBehaviour
         }
         if (id == _selectedId)
             _productText.text = $"{product[id]} / {maxProduct[id]}";
+        SaveData();
     }
 }

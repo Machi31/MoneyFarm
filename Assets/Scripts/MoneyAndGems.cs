@@ -46,23 +46,27 @@ public class MoneyAndGems : MonoBehaviour
     public void MinusMoney(int count){
         money -= count;
         UpdateText();
+        SaveData();
     }
     public void MinusGem(int count){
         gems -= count;
         UpdateText();
+        SaveData();
     }
 
     public void PlusMoney(int count){
         totalMoney += count;
         money += count;
         UpdateText();
+        SaveData();
     }
     public void PlusGem(int count){
         gems += count;
         UpdateText();
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
+    private void SaveData() {
         PlayerPrefs.SetInt("TotalMoney", totalMoney);
         PlayerPrefs.SetInt("Money", money);
         PlayerPrefs.SetInt("Gems", gems);

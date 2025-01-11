@@ -163,6 +163,7 @@ public class BuyFarm : MonoBehaviour
         _seedlings[_selectedId]._hugeSeedlings.SetActive(false);
         _seedlings[_selectedId]._farmSeedlings.SetActive(false);
         BuyNewFarmEvent?.Invoke(_selectedId);
+        SaveData();
     }
 
     public void BuyBonus(){
@@ -203,9 +204,10 @@ public class BuyFarm : MonoBehaviour
             _true[1].SetActive(true);
             _false[1].SetActive(false);
         }
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
+    private void SaveData() {
         PlayerPrefsX.SetIntArray("LvlFarm", _lvlFarm);
     }
 }

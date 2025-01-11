@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GamePush;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -31,17 +33,31 @@ public class GameManager : MonoBehaviour
             _secondsFromExit = (int)timeSinceExit.TotalSeconds;
             Debug.Log("Игрок был не в игре: " + _secondsFromExit);
         }
+
+        StartCoroutine(SaveTime());
     }
 
-    public void StartGame() => SceneManager.LoadScene(1);
+    public void StartGame() {
+        SceneManager.LoadScene(1);
+        if (_isFirst)
+            StartCoroutine(SaveDataCor());
+    }
 
-
-    private void OnApplicationQuit()
+    private void SaveData()
     {
         _isFirst = false;
+        PlayerPrefsX.SetBool("IsFirst", _isFirst);
+    }
+
+    private IEnumerator SaveDataCor(){
+        yield return new WaitForSeconds(5);
+        SaveData();
+    }
+
+    private IEnumerator SaveTime(){
+        yield return new WaitForSeconds(1);
         DateTime exitTime = DateTime.Now;
         string exitTimeString = exitTime.ToString();
         PlayerPrefs.SetString("ExitTime", exitTimeString);
-        PlayerPrefsX.SetBool("IsFirst", _isFirst);
     }
 }

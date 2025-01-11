@@ -81,6 +81,7 @@ public class WaterFarm : MonoBehaviour
             percentWater[i] = 100;
             _waterText.text = $"{percentWater[_selectedId]} / 100%";
         }
+        SaveData();
     }
 
     private void SlowWater(){
@@ -117,10 +118,10 @@ public class WaterFarm : MonoBehaviour
 
         _waterText.text = $"{percentWater[_selectedId]} / 100%";
         UpdateFarm?.Invoke(id);
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
-        StopAllCoroutines();
+    private void SaveData() {
         PlayerPrefsX.SetIntArray("PercentWater", percentWater);
         PlayerPrefsX.SetBool("AutoWaterPlus", _autoWaterPlus);
     }
@@ -147,10 +148,10 @@ public class WaterFarm : MonoBehaviour
                 _minusWater[id] = StartCoroutine(MinusWater(id));
             }
         }
+        SaveData();
     }
 
     private IEnumerator OnlyFade(){
-
         float elapsedTime = 0f;
 
         Color selectColor = _image.color;
@@ -173,7 +174,6 @@ public class WaterFarm : MonoBehaviour
 
     private IEnumerator OnlyOut()
     {
-
         float elapsedTime = 0f;
 
         Color selectColor = _image.color;

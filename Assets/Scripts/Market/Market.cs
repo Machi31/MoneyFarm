@@ -6,8 +6,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-//! ПЕРЕДЕЛАТЬ ЛОГИКУ ПРОДАЖИ ТОВАРА
-
 public class Market : MonoBehaviour
 {
     public static Market InstanceMarket { get; private set; }
@@ -153,15 +151,17 @@ public class Market : MonoBehaviour
     private void PlusProduct(int id, int count){
         _countProduct[id] += count;
         UpdateShelf();
+        SaveData();
     }
 
     public void CollectMoney(int id){
         MoneyAndGems.InstanceMG.PlusMoney(_countMoney[id]);
         _countMoney[id] = 0;
         UpdateShelf();
+        SaveData();
     }
 
-    private void OnApplicationQuit() {
+    private void SaveData() {
         PlayerPrefsX.SetIntArray("CostProduct", _costProduct);
         PlayerPrefsX.SetIntArray("CountProductMarket", _countProduct);
         PlayerPrefsX.SetIntArray("CountMoneyMarket", _countMoney);
@@ -173,6 +173,7 @@ public class Market : MonoBehaviour
             _countProduct[id] --;
             _countMoney[id] += _costProduct[id];
             UpdateShelf();
+            SaveData();
         }
     }
 
