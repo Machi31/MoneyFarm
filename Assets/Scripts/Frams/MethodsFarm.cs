@@ -11,6 +11,7 @@ public class MethodsFarm : MonoBehaviour
     public static event Action<int> CollectProduct;
     public static event Action<int> UpgradeMaxProduct;
     public static event Action<int> UpgradeMaxProductBonus;
+    public static event Action<int> OpenFullProfile;
     public static event Action OpenProfile;
     public static event Action OpenWarehouse;
     public static event Action OpenMarket;
@@ -134,6 +135,8 @@ public class MethodsFarm : MonoBehaviour
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenProfile?.Invoke();
     }
 
@@ -142,11 +145,9 @@ public class MethodsFarm : MonoBehaviour
         _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenWarehouse?.Invoke();
-        // for (int i = 0; i < _profileButton.Length; i++){
-        //     _profileButton[i].gameObject.SetActive(false);
-        //     _profileButton[i].interactable = false;
-        // }
     }
 
     public void OpenMarketMethod(){
@@ -154,11 +155,9 @@ public class MethodsFarm : MonoBehaviour
         _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenMarket?.Invoke();
-        // for (int i = 0; i < _profileButton.Length; i++){
-        //     _profileButton[i].gameObject.SetActive(false);
-        //     _profileButton[i].interactable = false;
-        // }
     }
 
     public void OpenGemMarketMethod(){
@@ -166,11 +165,19 @@ public class MethodsFarm : MonoBehaviour
         _profileWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         OpenGemMarket?.Invoke();
-        // for (int i = 0; i < _profileButton.Length; i++){
-        //     _profileButton[i].gameObject.SetActive(false);
-        //     _profileButton[i].interactable = false;
-        // }
+    }
+
+    public void OpenUpgradeFarmWindowMethod(){
+        _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _warehouseWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _marketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _gemMarketWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        OpenFullProfile?.Invoke(_selectedId);
     }
 
     public void OpenFarm(){

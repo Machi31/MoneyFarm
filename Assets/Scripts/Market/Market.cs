@@ -16,8 +16,6 @@ public class Market : MonoBehaviour
     [SerializeField] private float _smoothSpeed = 0.125f;
     private bool _isDragging;
 
-    [SerializeField] private GameObject _sellProductWindow;
-
     [SerializeField] private GameObject _farmWindow;
     [SerializeField] private GameObject _marketWindow;
 
@@ -31,9 +29,6 @@ public class Market : MonoBehaviour
     [SerializeField] private TMP_Text[] _countMoneyText;
     [SerializeField] private int[] _countMoney; 
 
-    [SerializeField] private int _idNeedSell;
-    [SerializeField] private int _needSell;
-
     private Coroutine[] _addCountMoneyIenumerator;
 
     private float _fadeDuaration = 0.5f;
@@ -45,13 +40,15 @@ public class Market : MonoBehaviour
             _countProduct = PlayerPrefsX.GetIntArray("CountProductMarket");
             _countMoney = PlayerPrefsX.GetIntArray("CountMoneyMarket");
         }
+        else
+            SaveData();
 
         int timesToAddMoney = GameManager.Instance._secondsFromExit / 5;
         for (int i = 0; i < _countProduct.Length; i++){
             if (_countProduct[i] > 0){
                 if (timesToAddMoney > _countProduct[i]){
                     _countProduct[i] = 0;
-                    MoneyAndGems.InstanceMG.PlusMoney(_costProduct[i] * _countProduct[i]);
+                    _countMoney[i]  = _costProduct[i] * _countProduct[i];
                 }
                 else{
                     int countProduct = _countProduct[i] - timesToAddMoney;
@@ -60,7 +57,7 @@ public class Market : MonoBehaviour
                         if (_addCountMoneyIenumerator[i] == null)
                             _addCountMoneyIenumerator[i] = StartCoroutine(AddCountMoney(i));
                     }
-                    MoneyAndGems.InstanceMG.PlusMoney(_costProduct[i] * countProduct);
+                    _countMoney[i] = _costProduct[i] * countProduct;
                 }
             }
         }
@@ -155,10 +152,18 @@ public class Market : MonoBehaviour
     }
 
     public void CollectMoney(int id){
-        MoneyAndGems.InstanceMG.PlusMoney(_countMoney[id]);
-        _countMoney[id] = 0;
-        UpdateShelf();
-        SaveData();
+        if (id < 6){
+            MoneyAndGems.InstanceMG.PlusMoney(_countMoney[id]);
+            _countMoney[id] = 0;
+            UpdateShelf();
+            SaveData();
+        }
+        else{
+            MoneyAndGems.InstanceMG.PlusGem(_countMoney[id]);
+            _countMoney[id] = 0;
+            UpdateShelf();
+            SaveData();
+        }
     }
 
     private void SaveData() {

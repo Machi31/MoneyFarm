@@ -34,9 +34,8 @@ public class Warehouse : MonoBehaviour
     private void Start() {
         if (!GameManager.Instance._isFirst)
             _countProduct = PlayerPrefsX.GetIntArray("CountProductWarehouse");
-
         else
-            PlayerPrefsX.SetIntArray("CountProductWarehouse", _countProduct);
+            SaveData();
     }
 
     private void Update() {

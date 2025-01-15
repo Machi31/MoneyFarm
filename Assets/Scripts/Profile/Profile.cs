@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Profile : MonoBehaviour
 {
+    [SerializeField] private MethodsProfile _methodsProfile;
+
     [SerializeField] private GameObject _farmWindow;
     [SerializeField] private GameObject _profileWindow;
 
@@ -19,14 +21,22 @@ public class Profile : MonoBehaviour
 
     private void OnEnable(){
         MethodsFarm.OpenProfile += OpenProfile;
+        MethodsFarm.OpenFullProfile += OpenFullProfile;
     }
 
     private void OnDisable(){
         MethodsFarm.OpenProfile -= OpenProfile;
+        MethodsFarm.OpenFullProfile -= OpenFullProfile;
     }
 
     private void OpenProfile(){
         StartCoroutine(FadeOut());
+        _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
+        _profileWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
+    }
+
+    private void OpenFullProfile(int id){
+        _methodsProfile.BuyFarmMethod(id);
         _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _profileWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
     }

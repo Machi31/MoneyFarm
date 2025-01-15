@@ -28,6 +28,8 @@ public class WaterFarm : MonoBehaviour
         _minusWater = new Coroutine[percentWater.Length];
         if (!GameManager.Instance._isFirst)
             percentWater = PlayerPrefsX.GetIntArray("PercentWater");
+        else
+            SaveData();
 
         float maxTime;
         for (int i = 0; i < percentWater.Length; i++){

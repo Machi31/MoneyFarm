@@ -21,6 +21,8 @@ public class MoneyAndGems : MonoBehaviour
             money = PlayerPrefs.GetInt("Money");
             gems = PlayerPrefs.GetInt("Gems");
         }
+        else
+            SaveData();
         UpdateText();
     }
 

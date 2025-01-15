@@ -19,9 +19,17 @@ public class BuyFarm : MonoBehaviour
     [SerializeField] private GameObject[] _bonusFarms;
 
     [SerializeField] private PackSeedlings[] _seedlings;
+    [SerializeField] private CostsFarms[] _costsFarm;
     [SerializeField] private Button _buyBonusBtn;
     [SerializeField] private Button[] _buyBtn;
+    [SerializeField] private GameObject _gem;
+    [SerializeField] private GameObject _coin;
     [SerializeField] private TMP_Text[] _lvlFarmText;
+    [SerializeField] private TMP_Text _costNewFarmText;
+    [SerializeField] private TMP_Text _costSmallFarmText;
+    [SerializeField] private TMP_Text _costMediumFarmText;
+    [SerializeField] private TMP_Text _costHighFarmText;
+    [SerializeField] private TMP_Text _costLargeFarmText;
     public int[] _lvlFarm;
 
     private int _selectedId;
@@ -36,6 +44,8 @@ public class BuyFarm : MonoBehaviour
         _autoPlusWater = PlayerPrefsX.GetBool("AutoWaterPlus", false);
         if (!GameManager.Instance._isFirst)
             _lvlFarm = PlayerPrefsX.GetIntArray("LvlFarm");
+        else
+            SaveData();
 
         for (int i = 0; i < _lvlFarmText.Length; i++)
             _lvlFarmText[i].text = _lvlFarm[i].ToString();
@@ -68,31 +78,35 @@ public class BuyFarm : MonoBehaviour
 
     public void ShowBuyFarmPanel(int id){
         _selectedId = id;
-        if (id < 6 || id == 6 && _lvlFarm[id] > 0){
+        if (_lvlFarm[id] > 0){
             _buyFarmPanel.transform.DOMove(new Vector3(0, 0, 0), 0.5f);
             _buyBonuspanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
+            _costSmallFarmText.text = _costsFarm[_selectedId]._costSmallFarm.ToString();
+            _costMediumFarmText.text = _costsFarm[_selectedId]._costMediumFarm.ToString();
+            _costHighFarmText.text = _costsFarm[_selectedId]._costHighFarm.ToString();
+            _costLargeFarmText.text = _costsFarm[_selectedId]._costLargeFarm.ToString();
             for (int i = 0; i < _buyBtn.Length; i++){
                 switch (i){
                     case 0:
-                        if (MoneyAndGems.InstanceMG.money < 100)
+                        if (MoneyAndGems.InstanceMG.money < _costsFarm[_selectedId]._costSmallFarm)
                             _buyBtn[0].interactable = false;
                         else
                             _buyBtn[0].interactable = true;
                     break;
                     case 1:
-                        if (MoneyAndGems.InstanceMG.money < 450)
+                        if (MoneyAndGems.InstanceMG.money < _costsFarm[_selectedId]._costMediumFarm)
                             _buyBtn[1].interactable = false;
                         else
                             _buyBtn[1].interactable = true;
                     break;
                     case 2:
-                        if (MoneyAndGems.InstanceMG.money < 800)
+                        if (MoneyAndGems.InstanceMG.money < _costsFarm[_selectedId]._costHighFarm)
                             _buyBtn[2].interactable = false;
                         else
                             _buyBtn[2].interactable = true;
                     break;
                     case 3:
-                        if (MoneyAndGems.InstanceMG.gems < 10)
+                        if (MoneyAndGems.InstanceMG.gems < _costsFarm[_selectedId]._costLargeFarm)
                             _buyBtn[3].interactable = false;
                         else
                             _buyBtn[3].interactable = true;
@@ -108,11 +122,26 @@ public class BuyFarm : MonoBehaviour
             _buyBonuspanel.transform.DOMove(new Vector3(0, 0, 0), 0.5f);
             _buyFarmPanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
 
-            _bonusFarms[id - 6].SetActive(true);
-            if (MoneyAndGems.InstanceMG.gems < 500)
-                _buyBonusBtn.interactable = false;
-            else
-                _buyBonusBtn.interactable = true;
+            if (_selectedId >= 6){
+                _coin.SetActive(false);
+                _gem.SetActive(true);
+                _bonusFarms[id - 6].SetActive(true);
+                _costNewFarmText.text = $"Купить за 500";
+                if (MoneyAndGems.InstanceMG.gems < 500)
+                    _buyBonusBtn.interactable = false;
+                else
+                    _buyBonusBtn.interactable = true;
+            }
+            else{
+                _gem.SetActive(false);
+                _coin.SetActive(true);
+                _seedlings[_selectedId]._newFarmSeedlings.SetActive(true);
+                _costNewFarmText.text = $"Купить за {_costsFarm[_selectedId]._costNewFarm.ToString()}";
+                if (MoneyAndGems.InstanceMG.money < _costsFarm[_selectedId]._costNewFarm)
+                    _buyBonusBtn.interactable = false;
+                else
+                    _buyBonusBtn.interactable = true;
+            }
         }
     }
 
@@ -124,6 +153,7 @@ public class BuyFarm : MonoBehaviour
             _seedlings[_selectedId]._middleSeedlings.SetActive(false);
             _seedlings[_selectedId]._hugeSeedlings.SetActive(false);
             _seedlings[_selectedId]._farmSeedlings.SetActive(false);
+            _seedlings[_selectedId]._newFarmSeedlings.SetActive(false);
         }
         else{
             for (int i = 0; i < 3; i++)
@@ -132,58 +162,65 @@ public class BuyFarm : MonoBehaviour
     }
 
     public void BuyNewFarm(int id){
-        switch (id){
-            case 0:
-                _productFarm.maxProduct[_selectedId] += 100;
-                _productFarm.multipleTime[_selectedId] += 0.01f;
-                MoneyAndGems.InstanceMG.MinusMoney(100);
-            break;
-            case 1:
-                _productFarm.maxProduct[_selectedId] += 500;
-                _productFarm.multipleTime[_selectedId] += 0.05f;
-                MoneyAndGems.InstanceMG.MinusMoney(450);
-            break;
-            case 2:
-                _productFarm.maxProduct[_selectedId] += 1000;
-                _productFarm.multipleTime[_selectedId] += 0.1f;
-                MoneyAndGems.InstanceMG.MinusMoney(800);
-            break;
-            case 3:
-                _productFarm.maxProduct[_selectedId] += 1000;
-                _productFarm.multipleTime[_selectedId] += 0.15f;
-                MoneyAndGems.InstanceMG.MinusGem(10);
-            break;
-        }
+            switch (id){
+                case 0:
+                    _productFarm.maxProduct[_selectedId] += 100;
+                    _productFarm.multipleTime[_selectedId] += 0.01f;
+                    MoneyAndGems.InstanceMG.MinusMoney(_costsFarm[_selectedId]._costSmallFarm);
+                break;
+                case 1:
+                    _productFarm.maxProduct[_selectedId] += 300;
+                    _productFarm.multipleTime[_selectedId] += 0.05f;
+                    MoneyAndGems.InstanceMG.MinusMoney(_costsFarm[_selectedId]._costMediumFarm);
+                break;
+                case 2:
+                    _productFarm.maxProduct[_selectedId] += 800;
+                    _productFarm.multipleTime[_selectedId] += 0.1f;
+                    MoneyAndGems.InstanceMG.MinusMoney(_costsFarm[_selectedId]._costHighFarm);
+                break;
+                case 3:
+                    _productFarm.maxProduct[_selectedId] += 1000;
+                    _productFarm.multipleTime[_selectedId] += 0.15f;
+                    MoneyAndGems.InstanceMG.MinusGem(_costsFarm[_selectedId]._costLargeFarm);
+                break;
+            }
         _lvlFarm[_selectedId]++;
         _lvlFarmText[_selectedId].text = _lvlFarm[_selectedId].ToString();
-        _buyFarmPanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
-        _buyBonuspanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
-        _seedlings[_selectedId]._smallSeedlings.SetActive(false);
-        _seedlings[_selectedId]._middleSeedlings.SetActive(false);
-        _seedlings[_selectedId]._hugeSeedlings.SetActive(false);
-        _seedlings[_selectedId]._farmSeedlings.SetActive(false);
+        CloseBuyFarmPanel();
         BuyNewFarmEvent?.Invoke(_selectedId);
         SaveData();
     }
 
     public void BuyBonus(){
-        MoneyAndGems.InstanceMG.MinusGem(500);
         switch (_selectedId){
+            case 0:
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                MoneyAndGems.InstanceMG.MinusMoney(_costsFarm[_selectedId]._costSmallFarm);
+                _lvlFarm[_selectedId]++;
+                _lvlFarmText[_selectedId].text = _lvlFarm[_selectedId].ToString();
+                BuyNewFarmEvent?.Invoke(_selectedId);
+            break;
             case 6:
+                MoneyAndGems.InstanceMG.MinusGem(500);
                 _lvlFarm[6]++;
                 _lvlFarmText[6].text = _lvlFarm[6].ToString();
             break;
             case 7:
+                MoneyAndGems.InstanceMG.MinusGem(500);
                 BuyKultivator?.Invoke();
                 _autoCollect = true;
             break;
             case 8:
+                MoneyAndGems.InstanceMG.MinusGem(500);
                 BuyWater?.Invoke();
                 _autoPlusWater = true;
             break;
         }
-        _buyFarmPanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
-        _buyBonuspanel.transform.DOMove(new Vector3(0, -15, 0), 0.5f);
+        CloseBuyFarmPanel();
         for (int i = 0; i < 3; i++)
             _bonusFarms[i].SetActive(false);
         
@@ -219,4 +256,15 @@ public class PackSeedlings{
     public GameObject _middleSeedlings;
     public GameObject _hugeSeedlings;
     public GameObject _farmSeedlings;
+    public GameObject _newFarmSeedlings;
+}
+
+[System.Serializable]
+
+public class CostsFarms{
+    public int _costNewFarm;
+    public int _costSmallFarm;
+    public int _costMediumFarm;
+    public int _costHighFarm;
+    public int _costLargeFarm;
 }

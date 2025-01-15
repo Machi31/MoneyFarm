@@ -23,7 +23,9 @@ public class ProductFarm : MonoBehaviour
 
     private int _secondsFromExit;
     private int _timeBonus = 10800;
+    private int _startNowTimeBonus;
     private int _nowTimeBonus;
+    private int _collectTimes;
 
     private bool _isUpdated = false;
 
@@ -47,15 +49,19 @@ public class ProductFarm : MonoBehaviour
             TimeSpan timeSinceExit = DateTime.Now - exitTime;
             _secondsFromExit = (int)timeSinceExit.TotalSeconds;
             if (_secondsFromExit < _nowTimeBonus){
+                _startNowTimeBonus = _nowTimeBonus - _secondsFromExit;
                 _nowTimeBonus -= _secondsFromExit;
             }
-            else
+            else{
+                _startNowTimeBonus = _nowTimeBonus;
                 _nowTimeBonus = 0;
+            }
         }
         else{
             timeToPlusProduct[0] = 36000 / 1000 / multipleTime[0];
             for (int i = 1; i < timeToPlusProduct.Length; i++)
                 timeToPlusProduct[i] = timeToPlusProduct[0];
+            SaveData();
         }
         _plusProductCor = new Coroutine[timeToPlusProduct.Length];
         _productText.text = $"{product[_selectedId]} / {maxProduct[_selectedId]}";
@@ -134,9 +140,13 @@ public class ProductFarm : MonoBehaviour
     }
 
     private void ColculateStartGame(int id, float time, int percentWater){
-        int collectTimes = Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
-        if (product[id] + collectTimes < maxProduct[id])
-            product[id] += collectTimes;
+        if (_startNowTimeBonus > 0){
+            time -= _startNowTimeBonus;
+            _collectTimes += Mathf.RoundToInt(Math.Abs(_startNowTimeBonus / timeToPlusProduct[id])) * 2;
+        }
+        _collectTimes += Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
+        if (product[id] + _collectTimes < maxProduct[id])
+            product[id] += _collectTimes;
         else
             product[id] = maxProduct[id];
         if (percentWater > 0 && product[id] < maxProduct[id])
