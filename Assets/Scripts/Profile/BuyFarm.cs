@@ -18,8 +18,8 @@ public class BuyFarm : MonoBehaviour
     [SerializeField] private GameObject _buyBonuspanel;
     [SerializeField] private GameObject[] _bonusFarms;
 
+    public CostsFarms[] _costsFarm;
     [SerializeField] private PackSeedlings[] _seedlings;
-    [SerializeField] private CostsFarms[] _costsFarm;
     [SerializeField] private Button _buyBonusBtn;
     [SerializeField] private Button[] _buyBtn;
     [SerializeField] private GameObject _gem;

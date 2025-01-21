@@ -10,6 +10,7 @@ public class ProductFarm : MonoBehaviour
     public static event Action<int, int> CollectFarm;
 
     [SerializeField] private WaterFarm _waterFarm;
+    [SerializeField] private BuyFarm _buyFarm;
 
     [SerializeField] private TMP_Text _EPHText;
     [SerializeField] private int _EPH;
@@ -58,7 +59,7 @@ public class ProductFarm : MonoBehaviour
             }
         }
         else{
-            timeToPlusProduct[0] = 36000 / 1000 / multipleTime[0];
+            timeToPlusProduct[0] = 36000 / 10000 / multipleTime[0];
             for (int i = 1; i < timeToPlusProduct.Length; i++)
                 timeToPlusProduct[i] = timeToPlusProduct[0];
             SaveData();
@@ -126,8 +127,10 @@ public class ProductFarm : MonoBehaviour
     }
 
     private void CollectAll(){
-        for (int i = 0; i < product.Length; i++)
+        for (int i = 0; i < product.Length; i++){
             CollectProduct(i);
+            UpdateFarm?.Invoke(_selectedId);
+        }
         SaveData();
     }
 
@@ -196,16 +199,17 @@ public class ProductFarm : MonoBehaviour
     private void UpdateEPH(){
         _EPH = 0;
         for (int i = 0; i < timeToPlusProduct.Length; i++){
-            _EPH +=  Mathf.RoundToInt(Math.Abs(3600 / timeToPlusProduct[i]) * Market.InstanceMarket._costProduct[i]);
+            if (_buyFarm._lvlFarm[i] > 0)
+                _EPH +=  Mathf.RoundToInt(3600 / timeToPlusProduct[i] * Market.InstanceMarket._costProduct[i]);
         }
         _EPHText.text = _EPH.ToString();
     }
 
     public void ColculateTimeToPlus(int id){
         if (_nowTimeBonus > 0)
-            timeToPlusProduct[id] = 36000 / 2 / 1000 / multipleTime[id];
+            timeToPlusProduct[id] = 36000 / 2 / 10000 / multipleTime[id];
         else
-            timeToPlusProduct[id] = 36000 / 1000 / multipleTime[id];
+            timeToPlusProduct[id] = 36000 / 10000 / multipleTime[id];
         SaveData();
     }
 

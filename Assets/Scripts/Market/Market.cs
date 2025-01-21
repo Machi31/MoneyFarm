@@ -43,26 +43,27 @@ public class Market : MonoBehaviour
         else
             SaveData();
 
-        int timesToAddMoney = GameManager.Instance._secondsFromExit / 5;
+        int timesToAddMoney = Mathf.RoundToInt(GameManager.Instance._secondsFromExit / 5);
         for (int i = 0; i < _countProduct.Length; i++){
             if (_countProduct[i] > 0){
                 if (timesToAddMoney > _countProduct[i]){
+                    timesToAddMoney = _countProduct[i];
                     _countProduct[i] = 0;
                     _countMoney[i]  = _costProduct[i] * _countProduct[i];
                 }
                 else{
                     int countProduct = _countProduct[i] - timesToAddMoney;
-                    _countProduct[i] -= countProduct;
+                    _countProduct[i] = countProduct;
                     if (_countProduct[i] > 0){
                         if (_addCountMoneyIenumerator[i] == null)
                             _addCountMoneyIenumerator[i] = StartCoroutine(AddCountMoney(i));
                     }
-                    _countMoney[i] = _costProduct[i] * countProduct;
+                    _countMoney[i] = _costProduct[i] * timesToAddMoney;
                 }
             }
         }
 
-        PlayerPrefsX.SetIntArray("CountProductMarket", _costProduct);
+        PlayerPrefsX.SetIntArray("CountProductMarket", _countProduct);
     }
 
     private void Awake() {

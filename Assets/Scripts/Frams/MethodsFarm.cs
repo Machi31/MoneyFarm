@@ -104,12 +104,6 @@ public class MethodsFarm : MonoBehaviour
         GP_Ads.ShowRewarded("SpeedReward");
     }
 
-    private void OnRewarded(string arg0){
-        if (arg0 == "SpeedReward")
-            PlusMaxSpeed?.Invoke();
-        OpenFarm();
-    }
-
     public void UpgradeMaxCountFarm(){
         _upgradeMaxCountWindow.transform.DOMove(new Vector3(0, 1, 0), _fadeDuaration);
         _upgradeSpeedWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
@@ -192,12 +186,10 @@ public class MethodsFarm : MonoBehaviour
     }
 
     public void CollectAllMethod(){
-        MoneyAndGems.InstanceMG.money -= 500;
-        CollectAll?.Invoke();
+        GP_Ads.ShowRewarded("CollectAll");
     }
     public void WaterFullMethod(){
-        MoneyAndGems.InstanceMG.money -= 500;
-        WaterFull?.Invoke();
+        GP_Ads.ShowRewarded("WaterFull");
     }
     public void PlusSpeedMethod(){
         MoneyAndGems.InstanceMG.gems -= 10;
@@ -206,6 +198,16 @@ public class MethodsFarm : MonoBehaviour
     public void SlowWaterMethod(){
         MoneyAndGems.InstanceMG.gems -= 10;
         SlowWater?.Invoke();
+    }
+
+    private void OnRewarded(string arg0){
+        if (arg0 == "SpeedReward")
+            PlusMaxSpeed?.Invoke();
+        else if (arg0 == "CollectAll")
+            CollectAll?.Invoke();
+        else if (arg0 == "WaterFull")
+            WaterFull?.Invoke();
+        OpenFarm();
     }
 
     private IEnumerator FadeOut()

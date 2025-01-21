@@ -19,6 +19,7 @@ public class Warehouse : MonoBehaviour
 
     [SerializeField] private int[] _countProduct;
     [SerializeField] private TMP_Text[] _costText;
+    [SerializeField] private TMP_Text[] _countWarehouseText;
     [SerializeField] private TMP_Text _countText;
     [SerializeField] private TMP_Text _costSendText;
 
@@ -59,8 +60,10 @@ public class Warehouse : MonoBehaviour
 
     private void OpenWarehouse(){
         StartCoroutine(FadeOut());
-        for (int i = 0; i < _countProduct.Length; i++)
+        for (int i = 0; i < _countProduct.Length; i++){
             _costText[i].text = $"{Market.InstanceMarket._costProduct[i]}";
+            _countWarehouseText[i].text = $"{_countProduct[i]}";
+        }
         _farmWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _warehouseWindow.transform.DOMove(new Vector3(0, 0, 0), _fadeDuaration);
     }
@@ -97,6 +100,10 @@ public class Warehouse : MonoBehaviour
         _countProduct[_selectedId] -= _sendProduct;
         _countText.text = $"{_countProduct[_selectedId]}";
         _scrollbar.value = 0;
+        for (int i = 0; i < _countProduct.Length; i++){
+            _costText[i].text = $"{Market.InstanceMarket._costProduct[i]}";
+            _countWarehouseText[i].text = $"{_countProduct[i]}";
+        }
         _sendProductWindow.transform.DOMove(new Vector3(0, -15, 0), _fadeDuaration);
         _isOpened = false;
         SaveData();

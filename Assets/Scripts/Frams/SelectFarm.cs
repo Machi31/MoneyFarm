@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,10 @@ public class SelectFarm : MonoBehaviour
     [SerializeField] private int _preselectId = 0;
     [SerializeField] private int _selectId = 0;
 
+    [SerializeField] private GameObject _coin;
+    [SerializeField] private GameObject _gem;
+    [SerializeField] private TMP_Text _costText;
+    [SerializeField] private Button _buyFarmButton;
     [SerializeField] private Button[] _farmsButton;
     [SerializeField] private Button[] _waterButton;
     [SerializeField] private Button[] _kultivatorButton;
@@ -41,6 +46,7 @@ public class SelectFarm : MonoBehaviour
             _waterButton[j].gameObject.SetActive(false);
         for (int j = 0; j < _kultivatorButton.Length; j++)
             _kultivatorButton[j].gameObject.SetActive(false);
+        _buyFarmButton.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -62,8 +68,24 @@ public class SelectFarm : MonoBehaviour
 
                 if (_selectId < 7){
                     for (int j = 0; j < _farmsButton.Length; j++){
-                        _farmsButton[j].gameObject.SetActive(true);
-                        _farmsButton[j].interactable = _buyFarm._lvlFarm[_selectId] > 0;
+                        if (_buyFarm._lvlFarm[_selectId] > 0){
+                            _buyFarmButton.gameObject.SetActive(false);
+                            _farmsButton[j].gameObject.SetActive(true);
+                            _farmsButton[j].interactable = _buyFarm._lvlFarm[_selectId] > 0;
+                        }
+                        else{
+                            _farmsButton[j].gameObject.SetActive(false);
+                            _buyFarmButton.gameObject.SetActive(true);
+                            _costText.text = $"Купить за {_buyFarm._costsFarm[_selectId]._costNewFarm}";
+                            if (_selectId < 6){
+                                _coin.SetActive(true);
+                                _gem.SetActive(false);
+                            }
+                            else{
+                                _gem.SetActive(true);
+                                _coin.SetActive(false);
+                            }
+                        }
                     }
                     for (int j = 0; j < _waterButton.Length; j++)
                         _waterButton[j].gameObject.SetActive(false);
@@ -71,6 +93,7 @@ public class SelectFarm : MonoBehaviour
                         _kultivatorButton[j].gameObject.SetActive(false);
                 }
                 else if (_selectId == 7){
+                    _buyFarmButton.gameObject.SetActive(false);
                     for (int j = 0; j < _farmsButton.Length; j++)
                         _farmsButton[j].gameObject.SetActive(false);
                     for (int j = 0; j < _waterButton.Length; j++)
@@ -79,6 +102,7 @@ public class SelectFarm : MonoBehaviour
                         _kultivatorButton[j].gameObject.SetActive(true);
                 }
                 else if (_selectId == 8){
+                    _buyFarmButton.gameObject.SetActive(false);
                     for (int j = 0; j < _farmsButton.Length; j++)
                         _farmsButton[j].gameObject.SetActive(false);
                     for (int j = 0; j < _kultivatorButton.Length; j++)

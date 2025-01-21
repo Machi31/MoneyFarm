@@ -9,6 +9,8 @@ public class WaterFarm : MonoBehaviour
     public static event Action<int> UpdateFarm;
     public static event Action<int, float, int> SendNeedTime;
 
+    [SerializeField] private BuyFarm _buyFarm;
+
     [SerializeField] private Image _image;
     [SerializeField] private float _fadeDuration = 1f;
 
@@ -51,6 +53,7 @@ public class WaterFarm : MonoBehaviour
                 percentWater[i] = 100;
             
             UpdateFarm?.Invoke(i);
+            SaveData();
         }
 
         _waterText.text = $"{percentWater[_selectedId]} / 100%";
@@ -80,8 +83,10 @@ public class WaterFarm : MonoBehaviour
 
     private void AddFullWater(){
         for (int i = 0; i < percentWater.Length; i++){
-            percentWater[i] = 100;
-            _waterText.text = $"{percentWater[_selectedId]} / 100%";
+            if (_buyFarm._lvlFarm[i] > 0){
+                percentWater[i] = 100;
+                UpdateFarm?.Invoke(i);
+            }
         }
         SaveData();
     }
