@@ -22,6 +22,8 @@ public class ProductFarm : MonoBehaviour
     public int[] maxProduct;
     public int[] product;
 
+    [SerializeField] private Button _plusSpeedButton;
+    [SerializeField] private TMP_Text _timeBonusText;
     private int _secondsFromExit;
     private int _timeBonus = 10800;
     private int _startNowTimeBonus;
@@ -52,10 +54,13 @@ public class ProductFarm : MonoBehaviour
             if (_secondsFromExit < _nowTimeBonus){
                 _startNowTimeBonus = _nowTimeBonus - _secondsFromExit;
                 _nowTimeBonus -= _secondsFromExit;
+                StartCoroutine(DisplayTimeRemaining());
+                _plusSpeedButton.interactable = false;
             }
             else{
                 _startNowTimeBonus = _nowTimeBonus;
                 _nowTimeBonus = 0;
+                _timeBonusText.text = "";
             }
         }
         else{
@@ -90,6 +95,7 @@ public class ProductFarm : MonoBehaviour
         UpgradesFarm.UpgradeMaxProductFarm += UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent += UpdateNewBuy;
         BuyFarm.BuyKultivator += AutoCollect;
+        ClickerPlus.ClickPlusProduct += PlusProductClick;
     }
 
     private void OnDisable(){
@@ -104,6 +110,13 @@ public class ProductFarm : MonoBehaviour
         UpgradesFarm.UpgradeMaxProductFarm -= UpdateSelectedId;
         BuyFarm.BuyNewFarmEvent -= UpdateNewBuy;
         BuyFarm.BuyKultivator -= AutoCollect;
+        ClickerPlus.ClickPlusProduct -= PlusProductClick;
+    }
+
+    private void PlusProductClick(int id){
+        if (product[id] < maxProduct[id] && _waterFarm.percentWater[id] > 0)
+            product[id]++;
+        _productText.text = $"{product[_selectedId]} / {maxProduct[_selectedId]}";
     }
 
     private void PlusMaxCountBonus(int id){
@@ -119,6 +132,8 @@ public class ProductFarm : MonoBehaviour
             ColculateTimeToPlus(i);
             PlusProductFarm(i);   
         }
+        _plusSpeedButton.interactable = false;
+        StartCoroutine(DisplayTimeRemaining());
     }
 
     private void AutoCollect() {
@@ -144,10 +159,20 @@ public class ProductFarm : MonoBehaviour
 
     private void ColculateStartGame(int id, float time, int percentWater){
         if (_startNowTimeBonus > 0){
-            time -= _startNowTimeBonus;
-            _collectTimes += Mathf.RoundToInt(Math.Abs(_startNowTimeBonus / timeToPlusProduct[id])) * 2;
+            if (_startNowTimeBonus > time){
+                _startNowTimeBonus -= (int)time;
+                _collectTimes += Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id])) * 2;
+            }
+            else{
+                _collectTimes += Mathf.RoundToInt(Math.Abs(_startNowTimeBonus / timeToPlusProduct[id])) * 2;
+                time -= _startNowTimeBonus;
+                if (time > 0)
+                    _collectTimes += Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
+            }
         }
-        _collectTimes += Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
+        else{
+            _collectTimes += Mathf.RoundToInt(Math.Abs(time / timeToPlusProduct[id]));
+        }
         if (product[id] + _collectTimes < maxProduct[id])
             product[id] += _collectTimes;
         else
@@ -219,6 +244,11 @@ public class ProductFarm : MonoBehaviour
         _productText.text = $"{product[id]} / {maxProduct[id]}";
         _isUpdated = false;
         UpdateFarm?.Invoke(_selectedId);
+        if (_waterFarm.percentWater[id] > 0){
+            if (_plusProductCor[id] != null)
+                StopCoroutine(_plusProductCor[id]);
+            _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
+        }
         SaveData();
     }
 
@@ -245,7 +275,6 @@ public class ProductFarm : MonoBehaviour
                     _isUpdated = true;
                 }
 
-                _nowTimeBonus--;
                 if (_nowTimeBonus > 0 && _waterFarm.percentWater[id] > 0){
                     _plusProductCor[id] = StartCoroutine(PlusProductFarmCor(id));
                 }
@@ -260,5 +289,29 @@ public class ProductFarm : MonoBehaviour
         if (id == _selectedId)
             _productText.text = $"{product[id]} / {maxProduct[id]}";
         SaveData();
+    }
+
+    private IEnumerator DisplayTimeRemaining()
+    {
+        while (_nowTimeBonus > 0)
+        {
+            string timeString = FormatTime(_nowTimeBonus);
+            _timeBonusText.text = timeString;
+            yield return new WaitForSeconds(1f);
+            _nowTimeBonus--;
+            SaveData();
+        }
+        _timeBonusText.text = "";
+        _plusSpeedButton.interactable = true;
+        SaveData();
+    }
+
+    private string FormatTime(int seconds)
+    {
+        int hours = seconds / 3600;
+        int minutes = seconds % 3600 / 60;
+        int secs = seconds % 60;
+
+        return $"{hours:D2}:{minutes:D2}:{secs:D2}";
     }
 }

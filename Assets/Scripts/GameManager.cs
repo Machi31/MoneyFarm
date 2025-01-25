@@ -59,7 +59,7 @@ public class GameManager : MonoBehaviour
     }
 
     private IEnumerator SaveDataCor(){
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(15);
         SaveData();
     }
 

@@ -55,15 +55,6 @@ public class MethodsFarm : MonoBehaviour
     }
 
     private void Update() {
-        if (MoneyAndGems.InstanceMG.money < 500){
-            _fullWaterButton.interactable = false;
-            _collectAllButton.interactable = false;
-        }
-        else {
-            _fullWaterButton.interactable = true;
-            _collectAllButton.interactable = true;
-        }
-
         if (MoneyAndGems.InstanceMG.gems < 10){
             _plusSpeedButton.interactable = false;
             _slowWaterButton.interactable = false;

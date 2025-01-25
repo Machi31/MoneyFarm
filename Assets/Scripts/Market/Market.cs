@@ -43,7 +43,7 @@ public class Market : MonoBehaviour
         else
             SaveData();
 
-        int timesToAddMoney = Mathf.RoundToInt(GameManager.Instance._secondsFromExit / 5);
+        int timesToAddMoney = Mathf.RoundToInt(GameManager.Instance._secondsFromExit / 2);
         for (int i = 0; i < _countProduct.Length; i++){
             if (_countProduct[i] > 0){
                 if (timesToAddMoney > _countProduct[i]){
@@ -175,7 +175,7 @@ public class Market : MonoBehaviour
 
     private IEnumerator AddCountMoney(int id){
         while(true){
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(2);
             _countProduct[id] --;
             _countMoney[id] += _costProduct[id];
             UpdateShelf();
