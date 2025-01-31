@@ -114,21 +114,21 @@ public class SelectFarm : MonoBehaviour
 
                 if (_selectId < 7 && _preselectId != 7){
                     if (_fadeCoroutine != null)
-                        StopCoroutine(_fadeCoroutine);
+                        StopAllCoroutines();
 
-                    _fadeCoroutine = StartCoroutine(FadeOut());
+                    _fadeCoroutine = StartCoroutine(FadeOut(_selectId, _preselectId));
                 }
                 else if (_selectId == 7 && _preselectId < 7){
                     if (_onlyFadeCoroutine != null)
-                        StopCoroutine(_onlyFadeCoroutine);
+                        StopAllCoroutines();
 
-                    _onlyFadeCoroutine = StartCoroutine(OnlyFade());
+                    _onlyFadeCoroutine = StartCoroutine(OnlyFade(_selectId, _preselectId));
                 }
                 else if (_selectId == 6 && _preselectId == 7){
                     if (_onlyOutCoroutine != null)
-                        StopCoroutine(_onlyOutCoroutine);
+                        StopAllCoroutines();
                     
-                    _onlyOutCoroutine = StartCoroutine(OnlyOut());
+                    _onlyOutCoroutine = StartCoroutine(OnlyOut(_selectId, _preselectId));
                 }
             }
         }
@@ -145,10 +145,10 @@ public class SelectFarm : MonoBehaviour
     public void OnBeginDrag() => _isDragging = true;
     public void OnEndDrag() => _isDragging = false;
 
-    private IEnumerator FadeOut()
+    private IEnumerator FadeOut(int id, int preId)
     {
         for (int i = 0; i < _image.Length; i++){
-            if (i != _selectId && i != _preselectId){
+            if (i != id && i != preId){
                 Color color = _image[i].color;
                 color.a = 0;
                 _image[i].color = color;
@@ -157,10 +157,10 @@ public class SelectFarm : MonoBehaviour
 
         float elapsedTime = 0f;
 
-        Color preselectColor = _image[_preselectId].color;
+        Color preselectColor = _image[preId].color;
         float preselectStartAlpha = preselectColor.a;
 
-        Color selectColor = _image[_selectId].color;
+        Color selectColor = _image[id].color;
         float selectStartAlpha = selectColor.a;
 
         while (elapsedTime < _fadeDuration)
@@ -169,24 +169,24 @@ public class SelectFarm : MonoBehaviour
             float t = elapsedTime / _fadeDuration;
 
             preselectColor.a = Mathf.Lerp(preselectStartAlpha, 0f, t);
-            _image[_preselectId].color = preselectColor;
+            _image[preId].color = preselectColor;
 
             selectColor.a = Mathf.Lerp(selectStartAlpha, 1f, t);
-            _image[_selectId].color = selectColor;
+            _image[id].color = selectColor;
 
             yield return null;
         }
 
         preselectColor.a = 0f;
-        _image[_preselectId].color = preselectColor;
+        _image[preId].color = preselectColor;
 
         selectColor.a = 1f;
-        _image[_selectId].color = selectColor;
+        _image[id].color = selectColor;
     }
 
-    private IEnumerator OnlyFade(){
+    private IEnumerator OnlyFade(int id, int preId){
         for (int i = 0; i < _image.Length; i++){
-            if (i != _selectId && i != _preselectId){
+            if (i != id && i != preId){
                 Color color = _image[i].color;
                 color.a = 0;
                 _image[i].color = color;
@@ -195,7 +195,7 @@ public class SelectFarm : MonoBehaviour
 
         float elapsedTime = 0f;
 
-        Color preselectColor = _image[_preselectId].color;
+        Color preselectColor = _image[preId].color;
         float preselectStartAlpha = preselectColor.a;
 
         while (elapsedTime < _fadeDuration)
@@ -204,19 +204,19 @@ public class SelectFarm : MonoBehaviour
             float t = elapsedTime / _fadeDuration;
 
             preselectColor.a = Mathf.Lerp(preselectStartAlpha, 0f, t);
-            _image[_preselectId].color = preselectColor;
+            _image[preId].color = preselectColor;
 
             yield return null;
         }
 
         preselectColor.a = 0f;
-        _image[_preselectId].color = preselectColor;
+        _image[preId].color = preselectColor;
     }
 
-    private IEnumerator OnlyOut()
+    private IEnumerator OnlyOut(int id, int preId)
     {
         for (int i = 0; i < _image.Length; i++){
-            if (i != _selectId && i != _preselectId){
+            if (i != id && i != preId){
                 Color color = _image[i].color;
                 color.a = 0;
                 _image[i].color = color;
@@ -225,7 +225,7 @@ public class SelectFarm : MonoBehaviour
 
         float elapsedTime = 0f;
 
-        Color selectColor = _image[_selectId].color;
+        Color selectColor = _image[id].color;
         float selectStartAlpha = selectColor.a;
 
         while (elapsedTime < _fadeDuration)
@@ -234,12 +234,12 @@ public class SelectFarm : MonoBehaviour
             float t = elapsedTime / _fadeDuration;
 
             selectColor.a = Mathf.Lerp(selectStartAlpha, 1f, t);
-            _image[_selectId].color = selectColor;
+            _image[id].color = selectColor;
 
             yield return null;
         }
 
         selectColor.a = 1f;
-        _image[_selectId].color = selectColor;
+        _image[id].color = selectColor;
     }
 }

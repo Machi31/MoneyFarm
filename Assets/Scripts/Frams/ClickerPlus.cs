@@ -21,7 +21,7 @@ public class ClickerPlus : MonoBehaviour
     }
 
     private void Update() {
-        if (_waterFarm.percentWater[_selectedId] > 0)
+        if (_selectedId < 7 && _waterFarm.percentWater[_selectedId] > 0)
             _button.interactable = true;
         else
             _button.interactable = false;
